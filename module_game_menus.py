@@ -15324,7 +15324,7 @@ game_menus = [
     "{!}",
   "none", [],
     [
-     ("formation_prep",
+     ("option_village_joining_battle",
 		[
 			(assign, reg1, "$option_village_joining"),
 		],"{reg1?Disable:Enable} villagers joining battle at your side.",
@@ -15339,6 +15339,20 @@ game_menus = [
 		]
       ),
 
+     ("option_hard_mode",
+		[
+			(assign, reg1, "$option_hard_mode"),
+		],"{reg1?Disable:Enable} Fair Game.",
+       [
+			(try_begin),
+				(eq, "$option_hard_mode", 1),
+				(assign, "$option_hard_mode", 0),
+			(else_try),
+				(eq, "$option_hard_mode", 0),
+				(assign, "$option_hard_mode", 1),
+			(try_end),
+		]
+      ),
      # ("motion_death",
 		# [
 			# (assign, reg1, "$option_motion_death"),
