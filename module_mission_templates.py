@@ -1730,7 +1730,7 @@ common_battle_mission_start = (
     (team_set_relation, 1, 3, 1),
 	#--fair combat
         (try_begin),
-            
+            (eq,"$option_hard_made",1),     
 	    (options_set_damage_to_player, 2), #0 = 1/4, 1 = 1/2, 2 = 1/1
 	    (options_set_damage_to_friends, 2), #0 = 1/2, 1 = 3/4, 2 = 1/1
         (try_end),

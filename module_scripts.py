@@ -50130,5 +50130,5 @@ scripts = [
 	#initialises mod options. called in game_start and quick_start.
 	("init_mod_options", [
                 (assign, "$option_hard_mode",1),
-		(assign, "$option_village_joininge", 0),
+		(assign, "$option_village_joining", 0),
 	])]
