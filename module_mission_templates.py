@@ -2140,8 +2140,11 @@ common_siege_assign_men_to_belfry = (
 tournament_triggers = [
   (ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest"),
 										#--fair combat
-										(options_set_damage_to_player, 2), #0 = 1/4, 1 = 1/2, 2 = 1/1
-										(options_set_damage_to_friends, 2), #0 = 1/2, 1 = 3/4, 2 = 1/1
+                                                                                (try_begin),
+                                                                                    (eq,"$option_hard_mode",1),
+										    (options_set_damage_to_player, 2), #0 = 1/4, 1 = 1/2, 2 = 1/1
+										    (options_set_damage_to_friends, 2), #0 = 1/2, 1 = 3/4, 2 = 1/1
+                                                                                (try_end),
 										#--
                                        (assign, "$g_arena_training_num_agents_spawned", 0)]),
   (ti_inventory_key_pressed, 0, 0, [(display_message,"str_cant_use_inventory_arena")], []),
@@ -3645,9 +3648,11 @@ mission_templates = [
          (assign, "$g_latest_order_4", 1), 
 		 
 		#--fair combat
-		(options_set_damage_to_player, 2), #0 = 1/4, 1 = 1/2, 2 = 1/1
-		(options_set_damage_to_friends, 2), #0 = 1/2, 1 = 3/4, 2 = 1/1
-		#--
+        (try_begin),
+            (eq,"$option_hard_mode",1),     
+	    (options_set_damage_to_player, 2), #0 = 1/4, 1 = 1/2, 2 = 1/1
+	    (options_set_damage_to_friends, 2), #0 = 1/2, 1 = 3/4, 2 = 1/1
+        (try_end),
          ]),
 
       
