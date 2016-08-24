@@ -50131,4 +50131,5 @@ scripts = [
 	("init_mod_options", [
                 (assign, "$option_hard_mode",1),
 		(assign, "$option_village_joining", 0),
+		(assign, "$option_torches",1),
 	])]

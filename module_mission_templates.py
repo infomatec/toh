@@ -3463,7 +3463,10 @@ mission_templates = [
     [
 	
     common_bodysliding,
-    common_torches_at_night,
+	(try_begin),
+		(eq,"$option_torches",1),
+    		common_torches_at_night,
+	(try_end),
 	#common_respawn_player,
 	#--shield bash
 	sp_shield_bash_1,

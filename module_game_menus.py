@@ -15353,6 +15353,22 @@ game_menus = [
 			(try_end),
 		]
       ),
+
+     ("option_torches",
+		[
+			(assign, reg1, "$option_torches"),
+		],"{reg1?Disable:Enable} Fair Game.",
+       [
+			(try_begin),
+				(eq, "$option_torches", 1),
+				(assign, "$option_torches", 0),
+			(else_try),
+				(eq, "$option_torches", 0),
+				(assign, "$option_torches", 1),
+			(try_end),
+		]
+      ),
+
      # ("motion_death",
 		# [
 			# (assign, reg1, "$option_motion_death"),
