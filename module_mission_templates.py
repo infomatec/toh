@@ -621,6 +621,7 @@ common_no_lance_on_foot =(
 # ADD SOME TORCHES TO RANDOM TROOPS AT NIGHT
 common_torches_at_night =(0, 1, ti_once, 
     [
+                (eq,"$option_torches",1),
 		(is_currently_night),
     ],
    [
@@ -3462,11 +3463,8 @@ mission_templates = [
      ],
     [
 	
-    common_bodysliding,
-	(try_begin),
-		(eq,"$option_torches",1),
-    		common_torches_at_night,
-	(try_end),
+        common_bodysliding,
+    	common_torches_at_night,
 	#common_respawn_player,
 	#--shield bash
 	sp_shield_bash_1,

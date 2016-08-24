@@ -15357,7 +15357,7 @@ game_menus = [
      ("option_torches",
 		[
 			(assign, reg1, "$option_torches"),
-		],"{reg1?Disable:Enable} Fair Game.",
+		],"{reg1?Disable:Enable} Torches.",
        [
 			(try_begin),
 				(eq, "$option_torches", 1),
