@@ -1664,7 +1664,7 @@ troops = [
    str_10|agi_8|int_7|cha_8|level(2),wp(100),knows_merchant_npc|
    knows_weapon_master_1|knows_riding_1|knows_athletics_1|knows_leadership_1|knows_tactics_1|knows_power_strike_1,
    0x000000018808144428a58f46d38ec70500000000001ec6a60000000000000000],
-   ["marina","Marina","Marina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_brigandine_leg,itm_leather_boots,itm_awlpike_long,itm_falchion],
+   ["npc7","Marina","Marina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_brigandine_leg,itm_leather_boots,itm_awlpike_long,itm_falchion],
    str_8|agi_11|int_10|cha_10|level(8),wp(100),knows_warrior_npc|
    knows_weapon_master_1|knows_first_aid_1|knows_wound_treatment_2|knows_ironflesh_3|knows_inventory_management_5,
    0x00000008790c000d552bb6eb2569c52c00000000001d386d0000000000000000],

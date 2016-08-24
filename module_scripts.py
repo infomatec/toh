@@ -30179,9 +30179,9 @@ scripts = [
       (try_end),
 		##-meet marina
 		(try_begin),
-			(troop_slot_eq, "trp_marina", slot_troop_met_previously, 0),
+			(troop_slot_eq, "trp_npc7", slot_troop_met_previously, 0),
 			(eq,":original_faction","fac_kingdom_5"),
-			(set_visitor, ":entry_no", "trp_marina"),
+			(set_visitor, ":entry_no", "trp_npc7"),
 		(try_end),
 		##-
     (try_end),
@@ -30337,7 +30337,7 @@ scripts = [
        #--test (toh 0.5)
 	   (this_or_next|is_between, ":cur_troop", mercenary_troops_begin, mercenary_troops_end),
 					##--marina
-					(this_or_next|eq, ":cur_troop", "trp_marina"),
+					(this_or_next|eq, ":cur_troop", "trp_npc7"),
 					#--
 					(is_between, ":cur_troop", walkers_begin, walkers_end),
        (val_add, ":num_walkers", 1),
@@ -30614,7 +30614,7 @@ scripts = [
 	   (this_or_next|is_between, ":cur_troop", mercenary_troops_begin, mercenary_troops_end),
 	   #--
 					##--marina
-					(this_or_next|eq, ":cur_troop", "trp_marina"),
+					(this_or_next|eq, ":cur_troop", "trp_npc7"),
 					#--
 					(is_between, ":cur_troop", walkers_begin, walkers_end),
 
