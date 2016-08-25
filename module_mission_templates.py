@@ -3478,7 +3478,7 @@ mission_templates = [
 		#common_force_lance,
 		common_no_lance_on_foot,
 		breakable_lances_trigger,
-	## lance usage end
+	## lance usage enD
 		#--
 		common_lord_trigger,
 		common_skirmish_mod,
@@ -3623,6 +3623,7 @@ mission_templates = [
 		 (assign, "$deathcam_on", 1),#bodysliding
 		 (try_begin),#night and proficiencies
 			(is_currently_night),
+                        (eq,"$option_torches",1),
 			(call_script, "script_night_affect_proficiency"),#--lowering ranged proficiencies at night
 		 (try_end),
 		 #--

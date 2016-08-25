@@ -4182,7 +4182,7 @@ game_menus = [
 							(faction_get_slot, ":stack_troop", ":ally_faction", slot_faction_noble_troop),
 						(try_end),
 					(else_try),
-							(assign, ":stack_troop","trp_bandit"),
+							(assign, ":stack_troop","trp_sellsword"),
 					(try_end),
 					(party_add_members, "p_temp_party_3", ":stack_troop", ":stack_size"),
 				(try_end),

@@ -34927,7 +34927,7 @@ scripts = [
        (neg|agent_is_alive, ":cur_agent"),
        (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
 		#--agent protection
-		(assign,":armoured",0),
+        (assign,":armoured",0),
 		(agent_get_item_slot, ":head", ":cur_agent", ek_head),
 		(agent_get_item_slot, ":body", ":cur_agent", ek_body),
 		(agent_get_item_slot, ":leg", ":cur_agent", ek_foot),
