@@ -35591,7 +35591,7 @@ scripts = [
         (troop_set_slot, "trp_npc7", slot_troop_personalityclash2_object, "trp_npc4"),  #deshavi - rolf
         (troop_set_slot, "trp_npc7", slot_troop_personalitymatch_object, "trp_npc16"),  #deshavi - klethi
         (troop_set_slot, "trp_npc7", slot_troop_home, "p_village_5"), #Kulum
-#        (troop_set_slot, "trp_npc7", slot_troop_payment_request, 300),
+        (troop_set_slot, "trp_npc7", slot_troop_payment_request, 500),
 		(troop_set_slot, "trp_npc7", slot_troop_kingsupport_argument, argument_victory),
 		(troop_set_slot, "trp_npc7", slot_troop_kingsupport_opponent, "trp_npc3"), #ymira
 		(troop_set_slot, "trp_npc7", slot_troop_town_with_contacts, "p_town_2"), #hernar
