@@ -116,9 +116,9 @@ slot_agent_walker_occupation      = 25
 
 
 #--(toh 0.51) bodysliding
-slot_agent_possessed              = 100
-slot_agent_real_troop             = 101
-slot_agent_index_value            = 102
+slot_agent_possessed              = 30 
+slot_agent_real_troop             = 31 
+slot_agent_index_value            = 32
 #--(toh 0.51) bodysliding END
 
     
@@ -165,7 +165,7 @@ slot_faction_tier_3_troop         = 43
 slot_faction_tier_4_troop         = 44
 slot_faction_tier_5_troop         = 45
 
-slot_faction_noble_troop         = 46 #<----nobles----
+slot_faction_noble_troop         = 460 #<----nobles----
 slot_faction_deserter_troop       = 48
 slot_faction_guard_troop          = 49
 slot_faction_messenger_troop      = 50
@@ -348,7 +348,7 @@ slot_party_leader_last_courted         = 70 #used for AI
 slot_party_last_in_any_center          = 71 #used for AI
 
 #-----------------------------------------------
-slot_center_last_time_sacked            = 73
+slot_center_last_time_sacked            = 730
 #-----------------------------------------------
 
 slot_castle_exterior    = slot_town_center
@@ -984,7 +984,7 @@ slot_troop_will_join_prison_break      = 161
 troop_slots_reserved_for_relations_start        = 165 #this is based on id_troops, and might change
 
 #--(toh 0.51) for pikemen, spearmen, ...
-slot_troop_sidearm        = 166
+slot_troop_sidearm        = 266
 #--
 
 slot_troop_relations_begin				= 0 #this creates an array for relations between troops
@@ -1173,10 +1173,10 @@ tc_escape               	  = 19
 tc_give_center_to_fief        = 20
 tc_merchants_house            = 21
 #----------pas de royaume---------
-tc_loot_center            	= 22
+tc_loot_center            	= 220
 #---------------------------------
 #----------exploration nouvel endroit
-tc_camp_talk						= 23
+tc_camp_talk						= 230
 #--------------------------------
 
 #Troop Commentaries begin
