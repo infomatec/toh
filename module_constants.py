@@ -116,11 +116,12 @@ slot_agent_walker_occupation      = 25
 
 
 #--(toh 0.51) bodysliding
-slot_agent_possessed              = 30 
-slot_agent_real_troop             = 31 
-slot_agent_index_value            = 32
+slot_agent_possessed              = 430 
+slot_agent_real_troop             = 431 
+slot_agent_index_value            = 432
 #--(toh 0.51) bodysliding END
 
+sp_agent_shield_bash_timer = 433#--toh 0.5 50
     
 ########################################################
 ##  FACTION SLOTS          #############################
@@ -1958,7 +1959,6 @@ pastel_green  = 0xFF80FF80
 dark_pastel_green = 0xFF20C020
 maroon        = 0xFF800040
 
-sp_agent_shield_bash_timer = 10#--toh 0.5 50
 
 
 BODYSLIDING_STORAGE = "trp_bodysliding_temp"

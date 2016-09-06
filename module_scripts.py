@@ -32140,7 +32140,7 @@ scripts = [
     (overlay_set_position, "$g_battle_enemies_dead", pos1),
 
     (call_script, "script_update_order_flags_on_map"),
-  ]),
+ ]),
 
  # script_set_town_picture
   # Input: none

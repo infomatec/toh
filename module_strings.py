@@ -732,7 +732,7 @@ strings = [
 #npc2 = rijat
 #npc3 = ymira  -> Tofara
 #npc4 = rolf
-#npc5 = baheshtur
+#npc5 = baheshtur --> Azhar 
 #npc6 = firentis
 #npc7 = deshavi --> Marina
 #npc8 = matheld
@@ -750,7 +750,7 @@ strings = [
 	("npc2_intro", "Thank you for freeing me from these bandits, {sir/madame},but it's too late I've lost everything!!"),
   ("npc3_intro", "Hello, {playername}, thank you for freeing me the other day."),
   ("npc4_intro", "Greetings. I am Rolf, son of Rolf, of the most ancient and puissant House of Rolf."),
-  ("npc5_intro", "Greetings, traveller. Would you join me for a drink?"),
+  ("npc5_intro", "Mhm? Speak up, this old wolf is deaf in one ear."),
   ("npc6_intro", "I am lost... Lost..."),
   ("npc7_intro", "Yeah? What?"),
   ("npc8_intro", "What do you want?"),
@@ -767,7 +767,7 @@ strings = [
   ("npc2_intro_response_1", "What happened to you?"),
   ("npc3_intro_response_1", "Hello. What's a clearly well-brought up young lady like you doing in a place like this?"),
   ("npc4_intro_response_1", "Hmm... I have never heard of the House of Rolf."),
-  ("npc5_intro_response_1", "Certainly. With whom do I have the pleasure of drinking?"),
+  ("npc5_intro_response_1", "You look like an old warrior. Whats your story?"),
   ("npc6_intro_response_1", "Why so gloomy, friend?"),
   ("npc7_intro_response_1", "You look like a soldier. But whats a woman doing with a pike and armour?"),
   ("npc8_intro_response_1", "Merely to pass the time of day, ma'am, if you're not otherwise engaged."),
@@ -784,7 +784,7 @@ strings = [
   ("npc2_intro_response_2", "Sorry, I have no time for that."),
   ("npc3_intro_response_2", "Run along now, girl. I have work to do."),
   ("npc4_intro_response_2", "Eh? No thanks, we don't want any."),
-  ("npc5_intro_response_2", "I have no time for that."),
+  ("npc5_intro_response_2", "I didn't say anything old man."),
   ("npc6_intro_response_2", "No doubt. Well, good luck getting found."),
   ("npc7_intro_response_2", "Nothing, I had the mistake of thinking I had a reason to talk to you."),
   ("npc8_intro_response_2", "Nothing at all, from one so clearly disinclined to pleasantries. Good day to you."),
@@ -802,7 +802,7 @@ strings = [
   ("npc2_backstory_a", "It's a tragic tale, sir."),
   ("npc3_backstory_a", "A good question, and I shall tell you!"),
   ("npc4_backstory_a", "Really? Well, perhaps your ignorance can be forgiven. Our ancestral lands are far away, over the mountains."),
-  ("npc5_backstory_a", "I am Baheshtur, son of Azabei, grandson of Badzan. Were you not a barbarian, you would likely know from my lineage that I am a Roan Horse Guhulay of the highlands, of the tribe of Shamir, of the clan of Dulam, of the family of Ubayn, from the Pantash valley, and you might be able to guess why I am so far from home."),
+  ("npc5_backstory_a", "My story? You want to know my story? Pftth.Bah, I guess I have some time to waste, listen up then and carefully, because I hate repeating myself."),
   ("npc6_backstory_a", "I have commited the greatest of sins, {sir/madame}, and it is to my shame that I must appoint you my confessor, if you should like to hear it."),
   ("npc7_backstory_a", "Would ask the same of you with your gaudy armour. I'm a soldier, and that's what matters."),
   ("npc8_backstory_a", "Ah. Well, if you must know, I shall tell you."),
@@ -820,7 +820,7 @@ strings = [
   ("npc2_backstory_b", "A while back, I left Atia with a caravan of goods. I was hoping to sell it all in Burfell and make a hefty sum. But, what do you know... we were looted and captured by those who are supposed to protect us!"),
   ("npc3_backstory_b", "My father, a well-known merchant, decided that I should be married to one of his business partners, a man well past the age of 50. I have been an obedient daughter all of my life, but it was a ridiculous and horrid proposition. So I ran away!"),
   ("npc4_backstory_b", "Like all the men of my family, I have come to a foreign land to make a name for myself in the profession of arms before returning home to take over custodianship of my estates. Unfortunately, the authorities in these lands have little understanding of the warrior code, and have chosen to call me a bandit and brigand, and put a price on my head -- a most unfair libel to throw at a gentleman adventurer, you will surely agree."),
-  ("npc5_backstory_b", "For as long as any one can remember, our people have feuded with the tribe of Humyan, many of whom have settled in the next valley over. Many men have died in this feud, on both sides, including two of my brothers. The Khan himself has ordered us to cease, to save men for the wars in Tohlobaria. But I know my rights, and my brothers' blood cries out for vengeance. I waylaid and killed a Humyan on a track over the mountains, and I rode out of our village the same night, without even having had the chance to bid farewell to my father. I will bide my time in Tohlobaria, for a year or two, then return home when the Khan's men have forgotten. The Humyan will not forget, of course, but such is the price of honour."),
+  ("npc5_backstory_b", "I am the warrior Azhar, and I used to be a noble guard under the Guluhay Khanate's banner. A warrior indeed I was, and many have I slaughtered in those proud days. However, it came to pass that my former lord died. My lord sired children, although all of them died in the field of battle. Leaving this old war horse without a master."),
   ("npc6_backstory_b", "I was a captain of horse in the service of the lord {s19}in {s20}, and my brother served with me. But we were both in love with the same woman, a courtesan -- a temptress, who played upon our jealousies! My brother and I quarreled. I had drunk too much. He slapped me with his glove, and I spit him upon my sword... My own brother! My sword-arm was stained with the blood of my kin!"),
   ("npc7_backstory_b", "Its obvious that you're looking for soldiers, so im not going to waste time. I've got years of experience fighting with different companies, and I get to the point as you can see, the cold steel right up them. My father was a militia captain if breeding matters a damn to you, and I was born in the Confederacy of Imifir."),
   ("npc8_backstory_b", "I am from an old family in the northern lands, the daughter of a thane and also wife to one. I fought by my husband's side, his partner both in war and in peace. But my husband died of the plague, when I was still childless. My husband had decreed that I should inherit his lands, in the absence of an heir. My brother-in-law, cursed be his name, said that it was not our custom that women could inherit a thanedom. That was nonsense, but his gold bought the loyalties of enough of my husband's faithless servants for him to install himself in my hall. So I fled, something I was raised never to do, and something I hope never to do again."),
@@ -838,7 +838,7 @@ strings = [
   ("npc2_backstory_c", "So here I am, no money and no way home."),
   ("npc3_backstory_c", "I shall marry whom I want, when I want. Moreover, regardless of what my father might think, I am perfectly capable of taking care of myself. I was thinking that I should perhaps join a band of gypsies, or perhaps a troop of mercenaries!"),
   ("npc4_backstory_c", "But I am anxious to avoid any further trouble, so if you knew of any company of fighting men where I might enlist, I would be most grateful."),
-  ("npc5_backstory_c", "In the meantime, any opportunities to earn a living with my sword would be most welcome."),
+  ("npc5_backstory_c", "I'm an old dog now. And I make money by guarding caravans, instead of riding under the Khanate's army and making the rivers and fields run thick with the blood of its enemies. A joke of an existence for this old soldier..."),
   ("npc6_backstory_c", "Do you believe there is hope for a man like me? Can I find the path of righteousness, or am I doomed to follow the demons that dwell inside of me?"),
   ("npc7_backstory_c", "Long story short, I specialize in the killing of idiots, and im good with this pike and fighting in general. A reliable soldier, not some prat who squeals at the sight of their own blood."),
   ("npc8_backstory_c", "When I have enough gold to raise an army I shall go back and take what it is mine."),
@@ -857,7 +857,7 @@ strings = [
   ("npc2_backstory_later", "I sold my boots and have managed to make a few denars peddling goods from town to town, but it's a hard living."),
   ("npc3_backstory_later", "I hired myself on as a cook for some passing caravans, and that at least keeps me fed. But it is rough company on the road, and I grow weary of fighting off guards and others who would try to take liberties. I was thinking that if I could find work as a warrior, men would know to leave me alone."),
   ("npc4_backstory_later", "I went back to my ancestral barony, to inspect my lands. But we had locusts, you see, and bad rains, and other things, so here I am again, looking for work."),
-  ("npc5_backstory_later", "I've been wandering through this war-torn land, looking for a leader who is worth following."),
+  ("npc5_backstory_later", "I'd be glad to have a chance to have a new master, perhaps ride and butcher my enemies once again instead of hearing merchants whine and smelling horse and camel **** all day."),
   ("npc6_backstory_later", "I have been wandering Tohlobaria, but have yet to find redemption."),
   ("npc7_backstory_later", "Right now, im looking for a captain. My last company was full of morons who all got butchered; and I'd like to get out there and fight again and earn coin."),
   ("npc8_backstory_later", "I am still seeking a war leader in whose shield wall I would fight. But I need gold, and fast, and the lords of this land as often as not prefer to stay behind the walls of their fortresses, rather march out to where glory and riches can be won."),
@@ -875,7 +875,7 @@ strings = [
   ("npc2_backstory_response_1", "Well, perhaps I could offer you work. Can you fight?"),
   ("npc3_backstory_response_1", "Well, as it happens I run a company of mercenaries."),
   ("npc4_backstory_response_1", "I run such a company, and might be able to hire an extra hand."),
-  ("npc5_backstory_response_1", "That's the spirit! I might be able to offer you something."),
+  ("npc5_backstory_response_1", "You'll have your second chance warrior. I happen to lead a warband, and im looking for soldiers."),
   ("npc6_backstory_response_1", "You could join us. Right wrongs, fight oppressors, redeem yourself, that kind of thing."),
   ("npc7_backstory_response_1", "It seems like you're in luck then, I happen to lead a company of soldiers and im currently hiring."),
   ("npc8_backstory_response_1", "I can offer you opportunities to make money through good honest fighting and pillaging."),
@@ -892,7 +892,7 @@ strings = [
   ("npc2_backstory_response_2", "Hard luck, friend. Good day to you."),
   ("npc3_backstory_response_2", "Go back to your family, lass. Fathers must always be obeyed."),
   ("npc4_backstory_response_2", "No, sorry, I haven't heard of one."),
-  ("npc5_backstory_response_2", "Sigh.. So long as you hill clans fight tribe against tribe, you will remain a silly, weak people."),
+  ("npc5_backstory_response_2", "You should retire, old man. The battlefield isn't the place for washed up bastards like you."),
   ("npc6_backstory_response_2", "Away with you, accursed fraticide!"),
   ("npc7_backstory_response_2", "One of the things any real soldier should have is respect. You clearly lack that so good day, enjoy the lukewarm ale and stale bread."),
   ("npc8_backstory_response_2", "Your brother-in-law was right -- women should not rule. Go back home and tend your hearth."),
@@ -909,7 +909,7 @@ strings = [
   ("npc2_signup", "Well, I will confess that I am not a warrior by trade."),
   ("npc3_signup", "Do you? Well, I am in no position to be picky! I would be pleased to rejoin you again."),
   ("npc4_signup", "Good! I look forward to vanquishing your enemies."),
-  ("npc5_signup", "Why, that is a most generous offer."),
+  ("npc5_signup", "A second chance eh... why not. Being old is trite and sitting on my arse guarding these pestilent caravans makes my joints ache. I'd like to get my blade to drink more than just some fool bandit's blood."),
   ("npc6_signup", "Yes! You must have been sent by divine providence! Lead me -- lead me away from darkness!"),
   ("npc7_signup", "Is that so? Sounds like a good prospect for me then."),
   ("npc8_signup", "Can you? I shall accept your offer."),
@@ -926,7 +926,7 @@ strings = [
   ("npc2_signup_2", "I'm a fast learner. I can ride, and know a fair bit about trade, prices and such."),
   ("npc3_signup_2", "I think you would find I would be a most valuable addition to your ranks. I am well versed in the classics of literature and can declaim several of the epic poems of my people. I play the lute and am a skilled manager of household servants."),
   ("npc4_signup_2", "Note however that as a gentleman and the holder of a barony, I expect to be in a position of command, and not be treated as one of the common soldiers."),
-  ("npc5_signup_2", "I shall not betray you -- so long, of course, as you do your duty to me by feeding me, paying me, and not dragging my miserable hide into a battle where there is no chance of winning. Hand me some salt, if you will -- it is the custom of our people to take salt from our captains, as a token of their concern for our well-being."),
+  ("npc5_signup_2", "But be warned, I am not going to call you master if you are not going to exhibit the strength of a proper warlord. I don't expect softness and I don't want to be traveling with a coward. I expect to work as a warrior, and to have my fair share of loot and bloodshed."),
   ("npc6_signup_2", "I am well practiced in the arts of war -- but I beg you, {sir/madame}, I wish to use my skills to defend the innocent, the pure, and the defenseless, not to be a common brigand and wreak more misery than I have already wrought."),
   ("npc7_signup_2", "Its good to get back out in a proper company; but I'm going to be frank- treat me like some slave porter or thinking im some stupid camp wench is going to result in this pike being shoved up your arse. I'm a soldier, not a servant."),
   ("npc8_signup_2", "I shall be pleased to fight in your shield wall. But I warn you -- if you ask me to gather the firewood, or cook a meal, you will not like the consequences."),
@@ -944,7 +944,7 @@ strings = [
   ("npc2_signup_response_1", "That will do."),
   ("npc3_signup_response_1", "Um, that's a start. We can teach you the rest."),
   ("npc4_signup_response_1", "Very well. I'll be glad to have you with us, um, 'Baron.'"),
-  ("npc5_signup_response_1", "Certainly. Here, have some salt."),
+  ("npc5_signup_response_1", "Of course, I wouldn't even be asking you to join if I was a spineless coward."),
   ("npc6_signup_response_1", "Happy to be of service! Get your things together, and we shall be on our way."),
   ("npc7_signup_response_1", "Do not worry about that, beyond basic camp duties that I expect of every soldier, I hired you to fight in battle."),
   ("npc8_signup_response_1", "No fear, ma'am. You're the widow and the daughter of a thane, and you'll be treated as such."),
@@ -962,7 +962,7 @@ strings = [
   ("npc2_signup_response_2", "I'm afraid I'm only looking for men with some experience. Good day to you."),
   ("npc3_signup_response_2", "Actually, we were looking for a slightly different skill-set."),
   ("npc4_signup_response_2", "Actually, we are not in the habit of hiring bandits with invented pedigrees. Good day, sir."),
-  ("npc5_signup_response_2", "Actually, on second thought, I prefer to keep more civilized company."),
+  ("npc5_signup_response_2", "On second thoughts, im not in the business of hiring Guluhay rapists and murderers, so you can enjoy the smell of camel **** for longer old man."),
   ("npc6_signup_response_2", "On second thought, maybe a mercenary company is not what you need right now."),
   ("npc7_signup_response_2", "If you can't take my orders you can always be free of duty and beg in the streets instead."),
   ("npc8_signup_response_2", "Ah. Actually, if you don't do whatever I order you to do, you'd best seek your fortune elsewhere."),
@@ -979,7 +979,7 @@ strings = [
   ("npc2_payment", "{!}."),
   ("npc3_payment", "{!}."),
   ("npc4_payment", "Excellent. Before we depart, would you be so kind to lend me {reg3} denars? I had to pawn a family heirloom at a pawnbroker here in {s20}, and I would like to retrieve it before we leave."),
-  ("npc5_payment", "Thank you. Now, to seal off our agreement, I ask for {reg3} denars from you. It's an advice my father gave me. He told me 'Baheshtur, never fight for a barbarian before {he/she} pays you your worth of gold first'."),
+  ("npc5_payment", "Unfortunately my armour is rusty and battered from constant brigands, and these fickle merchants don't pay enough for me to constantly repair it. And while my lord didn't have surviving children, I have sired a few here and there, and I know for certain some of my older ones have even sired their own. If you can pay me {reg3} in coin so I can refurbish my armour and weapons and send to my former concubines and their children, I'd fight a little happier."),
   ("npc6_payment", "{!}."),
   ("npc7_payment", "Excellent, it seems like were in business then. Pay me {reg3} coffers first and then I'll join your company. After all, I might be within the profession of killing idiots, but I'd be one myself if I didn't ask for some payment upfront."),
   ("npc8_payment", "Then I will fight your enemies for you. But first I want a bounty of {reg3} denars. If you are a worthy captain who can lead {his/her} company to riches and plunder, you should have no trouble paying. I cannot afford to follow a pauper."),
@@ -996,7 +996,7 @@ strings = [
   ("npc2_payment_response", "{!}."),
   ("npc3_payment_response", "{!}."),
   ("npc4_payment_response", "Certainly. Here's {reg3} denars."),
-  ("npc5_payment_response", "Well... here's {reg3} denars, then. Your first payment."),
+  ("npc5_payment_response", "Certainly, I can understand a warrior who wants to take care of his own blood and equipment. Its only natural. Here's {reg3} denars,"),
   ("npc6_payment_response", "{!}."),
   ("npc7_payment_response", "Wise, here's {reg3} coffers. You won't find a better company to fight for than mine, you made the right choice."),
   ("npc8_payment_response", "Oh, I am no pauper, madame. Here's {reg3} denars for you."),
@@ -1399,7 +1399,7 @@ strings = [
   ("npc2_fief_acceptance", "{s17} as a fief? Well, I've always thought in terms of buying and selling goods, not in terms of governing anything. But now that you mention it, I bet I could make that place turn a fair bit of revenue. I thank you, {my Lord/my lady} -- this is a very kind turn that you have done me."), #rijat
   ("npc3_fief_acceptance", "{Sire/My lady}, it is most generous of you to offer me {s17}. I would be pleased to hold it, and dedicate myself to the moral and material uplift of its inhabitants."), #ymira
   ("npc4_fief_acceptance", "It is good of you to grant me {s17} as a fief -- and most appropriate. Proud indeed is the king who has a baron of the House of Rolf as {his/her} vassal."), #rolf
-  ("npc5_fief_acceptance", "Bahadur -- I would be most pleased to hold {s17}. I will send word to the hills, to my kinsmen, and let them know that there is honorable gold to be earned serving under me in your armies -- and they will come flocking to fight for you!"), #beheshtur
+  ("npc5_fief_acceptance", "Years upon years of service, and despite all the honours and glory I have been bestowed throughout them all, none has been greater than this. I graciously accept, warlord."), #beheshtur
   ("npc6_fief_acceptance", "{Sir/Lady} -- I am surprised that you find me worthy to govern men, as I am just beginning to learn to govern myself. But if you indeed wish it, I would be most honored to hold {s17} in your name, and dedicate myself to the protection of those who live there."), #firentis
   ("npc7_fief_acceptance", "You're issuing me land? I expected to be paid in coffers, but actual land and titles? You were right when you said I made the right choice, you definitely are a well paying commander. I'll govern it, instill some discipline and make sure that the troops are always ready to stick the cold steel up them. You won't regret your decision."), #deshavi --> Marina
   ("npc8_fief_acceptance", "You'd make me a thegn? Well, I suppose that I can postpone reclaiming my inheritance for a little while longer, and make my great hall at {s17}. Some day, I may travel over the seas to take back what is mine, but until then, I would be pleased to raise a band of battle-hardened Hadvogs to fight under your banner."), #matheld
@@ -1433,7 +1433,7 @@ strings = [
   ("npc2_turn_against", "This is a sad day. I never thought that I might meet my old captain on the field of battle. Even if I triumph, it will bring me no joy."), #rijat
   ("npc3_turn_against", "Oh {playername} -- what a tragic turn our lives have taken! I can only hope that the tides of war that have made us enemies, will one day allow us to be friends."), #ymira
   ("npc4_turn_against", "Aye, well.... I'm not sure what to say. If we must fight, let's get it over with."), #rolf
-  ("npc4_turn_against", "{playername} Bahadur! I took your salt, and was well rewarded for it! However, I will remind you of an old truth -- that while a Guhulay may be an ardent follower, and a devoted friend, he will never be your slave.... Anyway, today I come against you with my sword raised. But I hope that one day we raise a glass together, to a friendship renewed."), #beheshtur
+  ("npc5_turn_against", "And here we meet on the field of battle... may your death be quick and with sword in hand, warlord."), #beheshtur
   ("npc6_turn_against", "It grieves me more than anything I can say to meet you like this, {playername}. I shall not dwell on the circumstances that have led us to this point. I can only hope that we may one day be reconciled."), #firentis
   ("npc7_turn_against", "Well. Isn't this awkward. One day im your soldier, the next im fighting you as a commander myself. I guess that's just how war goes... you'd best hope that you didn't replace me and any of your toughest with sodding fools. Either way, its time to fight."), #deshavi
   ("npc8_turn_against", "So we now we meet as enemies, and may shortly face each other over the rims of our shields. A grim day this is. Sometimes, the spinners of our fate have a dark sense of humor."), #matheld

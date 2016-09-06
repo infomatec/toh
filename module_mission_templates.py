@@ -149,16 +149,16 @@ sp_shield_bash_1 = (
 		    (eq, ":type", tf_female),
 			(agent_play_sound, ":agent", "snd_woman_yell"),
 		(try_end),
-		(agent_get_position, pos1, ":agent"),
+		(agent_get_position, pos11, ":agent"),
 		(assign, ":victim", -1),
 		(assign, ":minimum_distance", 150),
 		(try_for_agents, ":suspect"),
 		    (agent_is_alive, ":suspect"),
 			(agent_is_human, ":suspect"),
 			(neg|agent_is_ally, ":suspect"),
-			(agent_get_position, pos2, ":suspect"),
-			(neg|position_is_behind_position, pos2, pos1), #Suspect can't be behind basher.
-			(get_distance_between_positions, ":distance", pos1, pos2),
+			(agent_get_position, pos12, ":suspect"),
+			(neg|position_is_behind_position, pos12, pos11), #Suspect can't be behind basher.
+			(get_distance_between_positions, ":distance", pos11, pos12),
 			(le, ":distance", ":minimum_distance"),
 			(assign, ":minimum_distance", ":distance"),
 			(assign, ":victim", ":suspect"),
@@ -168,7 +168,7 @@ sp_shield_bash_1 = (
 		(agent_get_defend_action, ":action", ":victim"),
 		(try_begin),
 		    (eq, ":action", 2), #Blocking.
-			(neg|position_is_behind_position, pos1, pos2), #If basher isn't behind victim.
+			(neg|position_is_behind_position, pos11, pos12), #If basher isn't behind victim.
 			(agent_get_wielded_item, ":item", ":victim", 1), #Offhand.
 			(gt, ":item", 0),
 			(item_get_type, ":type", ":item"),
@@ -212,7 +212,7 @@ sp_shield_bash_3 = (
 				(agent_get_attack_action, ":action", ":agent"),
 		    	(eq, ":action", 0), #Free.
 				(agent_get_team, ":team", ":agent"),
-				(agent_get_position, pos1, ":agent"),
+				(agent_get_position, pos11, ":agent"),
 				(assign, ":victim", -1),
 				(assign, ":minimum_distance", 125),
 				(try_for_agents, ":suspect"),
@@ -224,8 +224,8 @@ sp_shield_bash_3 = (
 					#--
 					(agent_get_horse, ":horse", ":suspect"),
 					(eq, ":horse", -1), #No horse.
-					(agent_get_position, pos2, ":suspect"),
-					(neg|position_is_behind_position, pos2, pos1), #Suspect can't be behind basher.
+					(agent_get_position, pos12, ":suspect"),
+					(neg|position_is_behind_position, pos12, pos11), #Suspect can't be behind basher.
 					(agent_get_team, ":suspect_team", ":suspect"),
 					(neq, ":suspect_team", ":team"),
 					(assign,":ally",-1),
@@ -237,7 +237,7 @@ sp_shield_bash_3 = (
 						(assign,":ally",0),
 					(try_end),
 					(eq,":ally",0),
-					(get_distance_between_positions, ":distance", pos1, pos2),
+					(get_distance_between_positions, ":distance", pos11, pos12),
 					(le, ":distance", ":minimum_distance"),
 					(try_begin),
 						(eq,":suspect",":player_agent"),
@@ -280,7 +280,7 @@ sp_shield_bash_3 = (
                     (agent_get_defend_action, ":action", ":victim"),
                     (try_begin),
                         (eq, ":action", 2), #Blocking.
-                        (neg|position_is_behind_position, pos1, pos2), #If basher isn't behind victim.
+                        (neg|position_is_behind_position, pos11, pos12), #If basher isn't behind victim.
                         (agent_get_wielded_item, ":item", ":victim", 1), #Offhand.
                         (gt, ":item", 0),
                         (item_get_type, ":type", ":item"),

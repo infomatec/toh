@@ -1574,7 +1574,7 @@ dialogs = [
   ], "Have you slaves to sell? I will like to buy some, especially if they are of noble blood", "the_slaver_1",[]],
   
  [trp_ramun_the_slave_trader,"the_slaver_1", [], "Want slaves? and in addition nobles! it doesn't work like that at all. The nobles don't make good slaves, it's more lucrative to ransom them, in addition, slavery is prohibited in the interior of the land and I know you are not captain of any galley ... now you tell me what you really want", "the_slaver_2",[]],
- [trp_ramun_the_slave_trader|plyr,"the_slaver_2", [], "frankly, I seek to liberate a man of high rank, a Genaral of Dirim  to be more occurate, and I was told he was sold to a slave, the only one I know is you !", "the_slaver_3",[]],
+ [trp_ramun_the_slave_trader|plyr,"the_slaver_2", [], "frankly, I seek to liberate a man of high rank, a Genaral of Dirim  to be more occurate, and I was told he was sold to a slaves trader, the only one I know is you !", "the_slaver_3",[]],
   [trp_ramun_the_slave_trader,"the_slaver_3", [], "General de Dirim you say? will do this not by coincidence Linkadas? I've heard of this matter, besides I know where your man, but before issuing the information, I have a small favor to ask", "the_slaver_4",[]],
   [trp_ramun_the_slave_trader|plyr,"the_slaver_4", [], "(sigh) Tell it", "the_slaver_5",[]],
   [trp_ramun_the_slave_trader,"the_slaver_5", [], "Seems that some wealthy noble organize clandestine fights ... well, I'll not to encumber you with these details: I need 4 prisoners, but not just any, I want  4  seasoned guys who know how to use weapons, bring them to me and I would tell you where's your general!", "the_slaver_6",[]],
