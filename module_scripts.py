@@ -6556,6 +6556,9 @@ scripts = [
 	  (try_end),
 	  #--
 
+          (try_for_range, ":companion", companions_begin,companions_end),
+                (troop_set_slot, ":companion", slot_troop_occupation, slto_inactive_hero),
+	  (try_end),
 	]),
 
 
