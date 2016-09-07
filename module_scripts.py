@@ -6555,10 +6555,13 @@ scripts = [
 		(troop_set_slot, ":hero", slot_troop_occupation, slto_inactive_hero),
 	  (try_end),
 	  #--
-
+            #--(toh 0.53) disable some companions features
           (try_for_range, ":companion", companions_begin,companions_end),
                 (troop_set_slot, ":companion", slot_troop_occupation, slto_inactive_hero),
 	  (try_end),
+          
+                    (assign, "$disable_local_histories", 1),
+            #--
 	]),
 
 
