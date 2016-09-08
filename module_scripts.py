@@ -454,7 +454,7 @@ scripts = [
 	  #--
 	  (call_script, "script_initialize_volunteer_troops_in_town"),
 	  #--
-      (assign, "$disable_npc_complaints", 0),
+      (assign, "$disable_npc_complaints", 1),
       #NPC companion changes end
 
       # Setting random feast time
@@ -6556,9 +6556,9 @@ scripts = [
 	  (try_end),
 	  #--
             #--(toh 0.53) disable some companions features
-          (try_for_range, ":companion", companions_begin,companions_end),
-                (troop_set_slot, ":companion", slot_troop_occupation, slto_inactive_hero),
-	  (try_end),
+          #(try_for_range, ":companion", companions_begin,companions_end),
+          #      (troop_set_slot, ":companion", slot_troop_occupation, slto_inactive_hero),
+	  #(try_end),
           
                     (assign, "$disable_local_histories", 1),
             #--

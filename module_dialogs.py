@@ -3009,16 +3009,16 @@ dialogs = [
       ]],
 
   [anyone,"member_separate", [
-            (gt, "$npc_quit_morale", 30),
+            #(gt, "$npc_quit_morale", 30),
       ], "Oh really? Well, I'm not just going to wait around here. I'm going to go to the towns to look for other work. Is that what you want?", "member_separate_confirm",
    []],
 
-  [anyone,"member_separate", [
-      ], "Well, actually, there was something I needed to tell you.", "companion_quitting",
-   [
-        (assign, "$player_can_refuse_npc_quitting", 0),
-        (assign, "$player_can_persuade_npc", 0),
-       ]],
+  #[anyone,"member_separate", [
+  #    ], "Well, actually, there was something I needed to tell you.", "companion_quitting",
+  # [
+  #      (assign, "$player_can_refuse_npc_quitting", 0),
+  #      (assign, "$player_can_persuade_npc", 0),
+  #     ]],
 
 
   [anyone|plyr,"member_separate_confirm", [], "That's right. We need to part ways.", "member_separate_yes",[]],
@@ -3039,23 +3039,23 @@ dialogs = [
 
   [anyone,"member_question", [], "Very well. What did you want to ask?", "member_question_2",[]],
 
-  [anyone|plyr,"member_question_2", [], "How do you feel about the way things are going in this company?", "member_morale",[]],
+  #[anyone|plyr,"member_question_2", [], "How do you feel about the way things are going in this company?", "member_morale",[]],
   [anyone|plyr,"member_question_2", [], "Tell me your story again.", "member_background_recap",[]],
-  [anyone|plyr,"member_question_2", [
-	(troop_slot_eq, "$g_talk_troop", slot_troop_kingsupport_state, 0),
-  ], "I suppose you know that I aspire to be {king/queen} of this land?", "member_kingsupport_1",[]],
+  #[anyone|plyr,"member_question_2", [
+  #      (troop_slot_eq, "$g_talk_troop", slot_troop_kingsupport_state, 0),
+  #], "I suppose you know that I aspire to be {king/queen} of this land?", "member_kingsupport_1",[]],
 
-  [anyone|plyr,"member_question_2", [
-  ], "Do you have any connections that we could use to our advantage?", "member_intelgathering_1",[]],
+#  [anyone|plyr,"member_question_2", [
+#  ], "Do you have any connections that we could use to our advantage?", "member_intelgathering_1",[]],
   
   [anyone|plyr,"member_question_2", [
 	(faction_slot_eq, "$players_kingdom", slot_faction_leader, "trp_player"),
   ], "Would you be interested in holding a fief?", "member_fief_grant_1",[]],
   
   
-  [anyone,"member_morale", [
-        (call_script, "script_npc_morale", "$g_talk_troop"),
-      ], "{s21}", "do_member_trade",[]],
+  #[anyone,"member_morale", [
+  #      (call_script, "script_npc_morale", "$g_talk_troop"),
+  #    ], "{s21}", "do_member_trade",[]],
 
   [anyone,"member_background_recap", [
           (troop_get_slot, ":first_met", "$g_talk_troop", slot_troop_first_encountered),
@@ -3078,123 +3078,123 @@ dialogs = [
   [anyone,"do_member_view_char", [], "Anything else?", "member_talk",[]],
 
   
-  [anyone,"member_kingsupport_1", [
-		 (troop_get_slot, ":morality_grievances", "$g_talk_troop", slot_troop_morality_penalties),
-		 (gt, ":morality_grievances", 10),
-        ], "Um... Yes. I had heard.", "do_member_trade",[]],
+#  [anyone,"member_kingsupport_1", [
+#		 (troop_get_slot, ":morality_grievances", "$g_talk_troop", slot_troop_morality_penalties),
+#		 (gt, ":morality_grievances", 10),
+#        ], "Um... Yes. I had heard.", "do_member_trade",[]],
+#
+#  [anyone,"member_kingsupport_1", [
+#		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
+#		 (store_add, ":string", "str_npc1_kingsupport_1", ":npc_no"),
+##		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_1),
+#		 (str_store_string, s21, ":string"),
+#        ], "{s21}", "member_kingsupport_1a",[]],
+#  
+#  [anyone|plyr,"member_kingsupport_1a", [
+#        ], "Would you then support my cause?", "member_kingsupport_2",[]],
+#
+#  [anyone|plyr,"member_kingsupport_1a", [
+#        ], "Very good. I shall keep that in mind.", "do_member_trade",[]],
+#
+#
+#  [anyone,"member_kingsupport_2", [
+#		(assign, ":companion_already_on_mission", -1),
+#		(try_for_range, ":companion", companions_begin, companions_end),
+#			(troop_slot_eq, ":companion", slot_troop_occupation, slto_player_companion),
+#			(troop_get_slot, ":days_on_mission", ":companion", slot_troop_days_on_mission),
+#			(gt, ":days_on_mission", 17),
+#			(neg|main_party_has_troop, ":companion"),
+#			(assign, ":companion_already_on_mission", ":companion"),
+#		(try_end),
+#
+#		(gt, ":companion_already_on_mission", -1),
+#		(troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
+#		(str_store_string, s21, ":honorific"),
+#		(str_store_troop_name, s22, ":companion_already_on_mission"),
+#
+#		], "I would, {s21}. Moreover, I have a proposal on how I might help you attain your throne. But you recently sent {s22} off on a similar mission. Perhaps we should wait for a couple of weeks to avoid drawing too much attention to ourselves.", "do_member_trade",[]],
+#
+#		
+#  [anyone,"member_kingsupport_2", [
+#		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
+#		 (store_add, ":string", "str_npc1_kingsupport_2", ":npc_no"),
+##		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_2),
+#		 (str_store_string, s21, ":string"),
+#        ], "{s21}", "member_kingsupport_2a",[]],
+#  
+#  [anyone|plyr,"member_kingsupport_2a", [
+#		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
+#		 (store_add, ":string", "str_npc1_kingsupport_2a", ":npc_no"),
+##  		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_2a),
+#		 (str_store_string, s21, ":string"),
+#        ], "{s21}", "member_kingsupport_3",[]],
+#
+#  [anyone|plyr,"member_kingsupport_2a", [
+#		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
+#		 (store_add, ":string", "str_npc1_kingsupport_2b", ":npc_no"),
+##    	 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_2b),
+#		 (str_store_string, s21, ":string"),
+#
+#        ], "{s21}", "do_member_trade",[]],
+#
+#  [anyone,"member_kingsupport_3", [
+#		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
+#		 (store_add, ":string", "str_npc1_kingsupport_3", ":npc_no"),
+##		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_3),
+#		 (str_store_string, s21, ":string"),
+#        ], "{s21}", "member_kingsupport_3a",[]],
+#
+#
+#  [anyone|plyr,"member_kingsupport_3a", [
+#        ], "Very good. You do that", "member_kingsupport_4",[
+#		]],
+#
+#  [anyone|plyr,"member_kingsupport_3a", [
+#        ], "On second thought, stay with me for a while", "do_member_trade",[]],
+#
+#  [anyone,"member_kingsupport_4", [
+#  		 (troop_set_slot, "$g_talk_troop", slot_troop_days_on_mission, 21),
+#  		 (troop_set_slot, "$g_talk_troop", slot_troop_current_mission, npc_mission_kingsupport),
+#
+#		 (remove_member_from_party, "$g_talk_troop", "p_main_party"),
+#		 		 
+#		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_honorific),
+#		 (str_store_string, s21, ":string"),
+#
+#		 ], "Farewell then, {s21}, for a little while", "close_window",[]],
 
-  [anyone,"member_kingsupport_1", [
-		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
-		 (store_add, ":string", "str_npc1_kingsupport_1", ":npc_no"),
-#		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_1),
-		 (str_store_string, s21, ":string"),
-        ], "{s21}", "member_kingsupport_1a",[]],
-  
-  [anyone|plyr,"member_kingsupport_1a", [
-        ], "Would you then support my cause?", "member_kingsupport_2",[]],
-
-  [anyone|plyr,"member_kingsupport_1a", [
-        ], "Very good. I shall keep that in mind.", "do_member_trade",[]],
-
-
-  [anyone,"member_kingsupport_2", [
-		(assign, ":companion_already_on_mission", -1),
-		(try_for_range, ":companion", companions_begin, companions_end),
-			(troop_slot_eq, ":companion", slot_troop_occupation, slto_player_companion),
-			(troop_get_slot, ":days_on_mission", ":companion", slot_troop_days_on_mission),
-			(gt, ":days_on_mission", 17),
-			(neg|main_party_has_troop, ":companion"),
-			(assign, ":companion_already_on_mission", ":companion"),
-		(try_end),
-
-		(gt, ":companion_already_on_mission", -1),
-		(troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
-		(str_store_string, s21, ":honorific"),
-		(str_store_troop_name, s22, ":companion_already_on_mission"),
-
-		], "I would, {s21}. Moreover, I have a proposal on how I might help you attain your throne. But you recently sent {s22} off on a similar mission. Perhaps we should wait for a couple of weeks to avoid drawing too much attention to ourselves.", "do_member_trade",[]],
-
-		
-  [anyone,"member_kingsupport_2", [
-		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
-		 (store_add, ":string", "str_npc1_kingsupport_2", ":npc_no"),
-#		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_2),
-		 (str_store_string, s21, ":string"),
-        ], "{s21}", "member_kingsupport_2a",[]],
-  
-  [anyone|plyr,"member_kingsupport_2a", [
-		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
-		 (store_add, ":string", "str_npc1_kingsupport_2a", ":npc_no"),
-#  		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_2a),
-		 (str_store_string, s21, ":string"),
-        ], "{s21}", "member_kingsupport_3",[]],
-
-  [anyone|plyr,"member_kingsupport_2a", [
-		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
-		 (store_add, ":string", "str_npc1_kingsupport_2b", ":npc_no"),
-#    	 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_2b),
-		 (str_store_string, s21, ":string"),
-
-        ], "{s21}", "do_member_trade",[]],
-
-  [anyone,"member_kingsupport_3", [
-		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
-		 (store_add, ":string", "str_npc1_kingsupport_3", ":npc_no"),
-#		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_kingsupport_string_3),
-		 (str_store_string, s21, ":string"),
-        ], "{s21}", "member_kingsupport_3a",[]],
-
-
-  [anyone|plyr,"member_kingsupport_3a", [
-        ], "Very good. You do that", "member_kingsupport_4",[
-		]],
-
-  [anyone|plyr,"member_kingsupport_3a", [
-        ], "On second thought, stay with me for a while", "do_member_trade",[]],
-
-  [anyone,"member_kingsupport_4", [
-  		 (troop_set_slot, "$g_talk_troop", slot_troop_days_on_mission, 21),
-  		 (troop_set_slot, "$g_talk_troop", slot_troop_current_mission, npc_mission_kingsupport),
-
-		 (remove_member_from_party, "$g_talk_troop", "p_main_party"),
-		 		 
-		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_honorific),
-		 (str_store_string, s21, ":string"),
-
-		 ], "Farewell then, {s21}, for a little while", "close_window",[]],
-
-  [anyone,"member_intelgathering_1", [
-		 (troop_get_slot, ":town_with_contacts", "$g_talk_troop", slot_troop_town_with_contacts),
-		 (str_store_party_name, s17, ":town_with_contacts"),
-		 (store_faction_of_party, ":contact_town_faction", ":town_with_contacts"),
-		 (str_store_faction_name, s18, ":contact_town_faction"),
-		 
-		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
-		 (store_add, ":connections_string", "str_npc1_intel_mission", ":npc_no"),
-		 (str_store_string, s21, ":connections_string"),
-		 ], "{s21}", "member_intelgathering_3",[]],
-		
-  [anyone,"member_intelgathering_3", [ #change back to member_intelgathering_2 if this will be used
-		(eq, 1, 0),
-  ], "Of course, as few people should know of this as possible. If you want to collect the information, or pull me out, then don't send a messenger. Come and get me yourself -- even if that means you have to sneak through the gates.", "member_intelgathering_3",[]],
-		
-  [anyone|plyr,"member_intelgathering_3", [
-		 ], "Splendid idea -- you do that.", "member_intelgathering_4",[]],
-		
-  [anyone|plyr,"member_intelgathering_3", [
-		 ], "Actually, hold off for now.", "do_member_trade",[]],
-
-  [anyone,"member_intelgathering_4", [
-  		 (troop_set_slot, "$g_talk_troop", slot_troop_days_on_mission, 5),
-  		 (troop_set_slot, "$g_talk_troop", slot_troop_current_mission, npc_mission_gather_intel),
-		 
-		 (remove_member_from_party, "$g_talk_troop", "p_main_party"),
-		 		 
-		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_honorific),
-		 (str_store_string, s21, ":string"),
-
-		 ], "Good. I should be ready to report in about five days. Farewell then, {s21}, for a little while.", "close_window",[]],
-		 
+#  [anyone,"member_intelgathering_1", [
+#		 (troop_get_slot, ":town_with_contacts", "$g_talk_troop", slot_troop_town_with_contacts),
+#		 (str_store_party_name, s17, ":town_with_contacts"),
+#		 (store_faction_of_party, ":contact_town_faction", ":town_with_contacts"),
+#		 (str_store_faction_name, s18, ":contact_town_faction"),
+#		 
+#		 (store_sub, ":npc_no", "$g_talk_troop", "trp_npc1"),
+#		 (store_add, ":connections_string", "str_npc1_intel_mission", ":npc_no"),
+#		 (str_store_string, s21, ":connections_string"),
+#		 ], "{s21}", "member_intelgathering_3",[]],
+#		
+#  [anyone,"member_intelgathering_3", [ #change back to member_intelgathering_2 if this will be used
+#		(eq, 1, 0),
+#  ], "Of course, as few people should know of this as possible. If you want to collect the information, or pull me out, then don't send a messenger. Come and get me yourself -- even if that means you have to sneak through the gates.", "member_intelgathering_3",[]],
+#		
+#  [anyone|plyr,"member_intelgathering_3", [
+#		 ], "Splendid idea -- you do that.", "member_intelgathering_4",[]],
+#		
+#  [anyone|plyr,"member_intelgathering_3", [
+#		 ], "Actually, hold off for now.", "do_member_trade",[]],
+#
+#  [anyone,"member_intelgathering_4", [
+#  		 (troop_set_slot, "$g_talk_troop", slot_troop_days_on_mission, 5),
+#  		 (troop_set_slot, "$g_talk_troop", slot_troop_current_mission, npc_mission_gather_intel),
+#		 
+#		 (remove_member_from_party, "$g_talk_troop", "p_main_party"),
+#		 		 
+#		 (troop_get_slot, ":string", "$g_talk_troop", slot_troop_honorific),
+#		 (str_store_string, s21, ":string"),
+#
+#		 ], "Good. I should be ready to report in about five days. Farewell then, {s21}, for a little while.", "close_window",[]],
+#		 
 		 
 		 
 [anyone|auto_proceed, "start", 

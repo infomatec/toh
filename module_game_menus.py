@@ -9185,9 +9185,11 @@ game_menus = [
 			 (try_end),
              #---------------companions spawn------------
               (try_for_range, ":companion_candidate", companions_begin, companions_end),
+
+                (troop_slot_eq, ":companion_candidate", slot_troop_met_previously, 1),#(toh 0.53)
                 (troop_slot_eq, ":companion_candidate", slot_troop_occupation, 0),
                 (troop_slot_eq, ":companion_candidate", slot_troop_cur_center, "$current_town"),
-			    (neg|troop_slot_ge, ":companion_candidate", slot_troop_prisoner_of_party, centers_begin),
+                (neg|troop_slot_ge, ":companion_candidate", slot_troop_prisoner_of_party, centers_begin),
 
                 (set_visitor, ":cur_entry", ":companion_candidate"),
 
