@@ -20602,6 +20602,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                     (ge, "$g_talk_troop_relation", 30),
                     (ge, "$g_relation_boost", 10),
                     ],
+
    "Again you save our necks, {playername}! Truly, you are the best of friends. {s43}", "close_window", [
        (call_script, "script_lord_comment_to_s43", "$g_talk_troop", "str_battle_won_default"),
        (try_begin),
@@ -20684,7 +20685,17 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                     (party_get_num_companions, reg1, "$g_encountered_party"),
                     (val_sub, reg1, 1),
                     ],
-   "Thank you for your help {sir/madam}. You saved {reg1?our lives:my life} out there.", "close_window", []],
+   "Thank you for your help {sir/madam}. You saved {reg1?our lives:my life} out there.", "close_window", [
+        #--(toh 0.53) 
+        (troop_slot_eq, "trp_npc5", slot_troop_met_previously, 0),
+        (display_message,"caravane saved"),
+         (ge, "$g_encountered_party", 0),
+         (party_is_active, "$g_encountered_party"),
+         (party_get_template_id, ":encountered_party_template", "$g_encountered_party"),
+         (eq, ":encountered_party_template", "pt_kingdom_caravan_party"),
+         #ici ajouter variable globale
+         #--
+       ]],
 
   [anyone,"start", [(eq,"$talk_context",tc_ally_thanks),
                     (ge, "$g_relation_boost", 5),
@@ -20698,6 +20709,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 					(troop_slot_eq, "trp_npc3", slot_troop_met_previously, 0),
                     (store_conversation_troop,":cur_troop"),
                     (eq,":cur_troop","trp_kidnapped_girl"),
+                    (display_message,"@comapanions!"),
 					(set_conversation_speaker_troop, "trp_npc3"),
 					],
    "Thank you so much for rescuing me, {sir/madam}. Will you take me to my family now?", "kidnapped_girl_liberated_battle",[]],
