@@ -6556,11 +6556,12 @@ scripts = [
 	  (try_end),
 	  #--
             #--(toh 0.53) disable some companions features
-          #(try_for_range, ":companion", companions_begin,companions_end),
-          #      (troop_set_slot, ":companion", slot_troop_occupation, slto_inactive_hero),
-	  #(try_end),
-          
-                    (assign, "$disable_local_histories", 1),
+          (try_for_range, ":companion", companions_begin,companions_end),
+                (troop_set_slot, ":companion", slot_troop_occupation, slto_inactive_hero),
+	  (try_end),
+
+            (troop_set_slot, "trp_npc7", slot_troop_occupation, 0),
+            (assign, "$disable_local_histories", 1),
             #--
 	]),
 
@@ -30188,6 +30189,16 @@ scripts = [
 			(troop_slot_eq, "trp_npc7", slot_troop_met_previously, 0),
 			(eq,":original_faction","fac_kingdom_5"),
 			(set_visitor, ":entry_no", "trp_npc7"),
+		(try_end),
+		##-
+                
+		##-meet Azhar
+		(try_begin),
+                
+                        (troop_slot_eq, "trp_npc5", slot_troop_occupation, 0),
+			(troop_slot_eq, "trp_npc5", slot_troop_met_previously, 0),
+			(eq,":original_faction","fac_kingdom_3"),
+			(set_visitor, ":entry_no", "trp_npc5"),
 		(try_end),
 		##-
     (try_end),
