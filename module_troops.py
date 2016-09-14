@@ -1650,7 +1650,7 @@ troops = [
    str_6|agi_9|int_11|cha_6|level(1),wp(20),knows_merchant_npc|
    knows_wound_treatment_1|knows_trade_1|knows_first_aid_3|knows_surgery_1|knows_athletics_1|knows_riding_1,
    0x00000001e10c10060000a2a566e3fff300000000001f84000000000000000000],
-  ["npc4","Rolf","Rolf",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_leather_jerkin,itm_nomad_boots, itm_sword_medieval_a],
+  ["npc4","Ymir","Ymir",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_leather_jerkin,itm_nomad_boots, itm_sword_medieval_a],
    str_10|agi_9|int_13|cha_10|level(10),wp(110),knows_warrior_npc|
    knows_weapon_master_2|knows_power_strike_2|knows_riding_2|knows_athletics_2|knows_power_throw_2|knows_first_aid_1|knows_surgery_1|knows_tactics_2|knows_leadership_2,
    0x000000057f1074002c75c6a8a58ad72e00000000001e1a890000000000000000],
@@ -1685,9 +1685,7 @@ troops = [
    str_6|agi_10|int_10|cha_8|level(4),wp(80),knows_tracker_npc|
    knows_riding_3|knows_leadership_1|knows_weapon_master_2,
    0x000000039a00d143346676ab9c6db29700000000001fb7240000000000000000],
-   ["npc12","Sayyid","Sayyid",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_southern_lamellar,itm_saracen_helmet_f,itm_afirid_boots_b,itm_guhulay_sword_two_handed_a,itm_javelin],
-   str_10|agi_10|int_9|cha_8|level(12),wp(100),knows_warrior_npc|
-   knows_riding_1|knows_leadership_1|knows_weapon_master_4,
+   ["npc12","Sayyid","Sayyid",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_southern_lamellar,itm_saracen_helmet_f,itm_afirid_boots_b,itm_guhulay_sword_two_handed_a,itm_javelin], str_10|agi_10|int_9|cha_8|level(12),wp(100),knows_warrior_npc| knows_riding_1|knows_leadership_1|knows_weapon_master_4,
    0x00000007a90ca34473e48b4ff2cedeb800000000001f83210000000000000000],
 
    ["npc13","Yuewei","Yuewei",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_tunic_lamellar,itm_guhulay_cav_boots,itm_wyu_ring_sword,itm_wyu_light_crossbow,itm_bolts],
@@ -1747,7 +1745,7 @@ troops = [
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1,
    0x00000004400922812add2e4aca22372100000000001d67490000000000000000],
   #-------------------------------------
- ["npc16","Klethi","Klethi",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_peasant_dress,itm_nomad_boots, itm_dagger, itm_throwing_knives],
+ ["npc16","Antonius","Antonius",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_peasant_dress,itm_nomad_boots, itm_dagger, itm_throwing_knives],
    str_7|agi_11|int_8|cha_7|level(2),wp(80),knows_tracker_npc|
    knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
    0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
