@@ -15265,7 +15265,11 @@ mission_templates = [
         
         (try_begin),
           (agent_get_troop_id, ":troop_no", ":agent_no"),
-          (is_between, ":troop_no", "trp_relative_of_merchant", "trp_relative_of_merchants_end"),
+          #--(toh 0.53) Makkara
+          #(this_or_next|is_between, ":troop_no", "trp_relative_of_merschant", "trp_relative_of_merchants_end"),
+          (eq,":troop_no","trp_npc11"),
+           (troop_slot_eq, "trp_npc11", slot_troop_met_previously, 0),
+          #--
           (agent_set_team, ":agent_no", 7),
           (team_set_relation, 0, 7, 0),          
         (try_end),                
@@ -15273,10 +15277,11 @@ mission_templates = [
         
 	   (0, 0, 0, 
 	   [	     
-         (party_get_template_id, ":template", "$g_encountered_party"),
-         (eq, ":template", "pt_looter_lair"),
-         (check_quest_active, "qst_save_relative_of_merchant"),	   
-         (eq, "$relative_of_merchant_is_found", 0),
+#            (party_get_template_id, ":template", "$g_encountered_party"),
+#            (eq, ":template", "pt_looter_lair"),
+#            (check_quest_active, "qst_save_relative_of_merchant"),	   
+#            (eq, "$relative_of_merchant_is_found", 0),
+           (troop_slot_eq, "trp_npc11", slot_troop_met_previously, 0),
 	   ],
 	   [
         (get_player_agent_no, ":player_agent"),
@@ -15284,13 +15289,15 @@ mission_templates = [
 
         (try_for_agents, ":agent_no"),
           (agent_get_troop_id, ":troop_no", ":agent_no"),
-          (is_between, ":troop_no", "trp_relative_of_merchant", "trp_relative_of_merchants_end"),    
+          #(is_between, ":troop_no", "trp_relative_of_merchant", "trp_relative_of_merchants_end"),    
+          
+          (eq,":troop_no","trp_npc11"),
           (agent_set_scripted_destination, ":agent_no", pos0),
           (agent_get_position, pos1, ":agent_no"),
           (get_distance_between_positions, ":dist", pos0, pos1),
           (le, ":dist", 200),
           #(assign, "$g_talk_troop", "trp_relative_of_merchant"),
-          (start_mission_conversation, "trp_relative_of_merchant"),
+          (start_mission_conversation, "trp_npc11"),
         (try_end),
 	   ]),
         
@@ -15532,33 +15539,35 @@ mission_templates = [
          (num_active_teams_le, 1),         
        ],
        [
-         (party_get_template_id, ":template", "$g_encountered_party"),
+       #  (party_get_template_id, ":template", "$g_encountered_party"),
          (try_begin),
-           (eq, ":template", "pt_looter_lair"),
-           (check_quest_active, "qst_save_relative_of_merchant"),
+       #    (eq, ":template", "pt_looter_lair"),
+       #    (check_quest_active, "qst_save_relative_of_merchant"),
 
-           (store_faction_of_party, ":starting_town_faction", "$g_starting_town"),
-           
-           (try_begin),
-             (eq, ":starting_town_faction", "fac_kingdom_1"),
-             (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
-           (else_try),  
-             (eq, ":starting_town_faction", "fac_kingdom_2"),
-             (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
-           (else_try),                   
-             (eq, ":starting_town_faction", "fac_kingdom_3"),
-             (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
-           (else_try),  
-             (eq, ":starting_town_faction", "fac_kingdom_4"),
-             (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
-           (else_try),  
-             (eq, ":starting_town_faction", "fac_kingdom_5"),
-             (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
-           (else_try),  
-             (eq, ":starting_town_faction", "fac_kingdom_6"),
-             (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
-           (try_end),
-           
+       #    (store_faction_of_party, ":starting_town_faction", "$g_starting_town"),
+       #    
+       #    (try_begin),
+       #      (eq, ":starting_town_faction", "fac_kingdom_1"),
+       #      (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
+       #    (else_try),  
+       #      (eq, ":starting_town_faction", "fac_kingdom_2"),
+       #      (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
+       #    (else_try),                   
+       #      (eq, ":starting_town_faction", "fac_kingdom_3"),
+       #      (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
+       #    (else_try),  
+       #      (eq, ":starting_town_faction", "fac_kingdom_4"),
+       #      (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
+       #    (else_try),  
+       #      (eq, ":starting_town_faction", "fac_kingdom_5"),
+       #      (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
+       #    (else_try),  
+       #      (eq, ":starting_town_faction", "fac_kingdom_6"),
+       #      (assign, ":troop_of_merchant", "trp_relative_of_merchant"),
+       #    (try_end),
+       #    
+
+           (troop_slot_eq, "trp_npc11", slot_troop_met_previously, 0),
            (get_player_agent_no, ":player_agent"),
            (agent_get_position, pos0, ":player_agent"),
            (assign, ":minimum_distance", 100000),
@@ -15571,7 +15580,7 @@ mission_templates = [
              (assign, ":minimum_distance", ":dist"),
            (try_end),                     
                           
-           (add_visitors_to_current_scene, ":nearest_entry_point", ":troop_of_merchant", 1, 0),                      
+           (add_visitors_to_current_scene, ":nearest_entry_point", "trp_npc11", 1, 0),                      
          (try_end),
        ]),
 
