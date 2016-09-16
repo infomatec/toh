@@ -6561,6 +6561,7 @@ scripts = [
 	  (try_end),
 
             (troop_set_slot, "trp_npc7", slot_troop_occupation, 0),
+            (troop_set_slot, "trp_npc11", slot_troop_occupation, 0),
             (assign, "$disable_local_histories", 1),
             #--
 	]),
