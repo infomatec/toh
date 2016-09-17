@@ -15270,19 +15270,20 @@ mission_templates = [
           (eq,":troop_no","trp_npc11"),
            (troop_slot_eq, "trp_npc11", slot_troop_met_previously, 0),
           #--
-          (agent_set_team, ":agent_no", 7),
-          (team_set_relation, 0, 7, 0),          
+          (agent_set_team, ":agent_no", 0),
+          #(team_set_relation, 0, 7, 0),          
         (try_end),                
         ]),
 
         
-	   (0, 0, 0, 
+      (0, 0, 0, 
 	   [	     
 #            (party_get_template_id, ":template", "$g_encountered_party"),
 #            (eq, ":template", "pt_looter_lair"),
 #            (check_quest_active, "qst_save_relative_of_merchant"),	   
 #            (eq, "$relative_of_merchant_is_found", 0),
            (troop_slot_eq, "trp_npc11", slot_troop_met_previously, 0),
+            (neg|main_party_has_troop,"trp_npc11"),
 	   ],
 	   [
         (get_player_agent_no, ":player_agent"),
@@ -15298,6 +15299,8 @@ mission_templates = [
           (get_distance_between_positions, ":dist", pos0, pos1),
           (le, ":dist", 200),
           #(assign, "$g_talk_troop", "trp_relative_of_merchant"),
+
+   		(troop_set_slot,"trp_npc11", slot_troop_met_previously, 1),
           (start_mission_conversation, "trp_npc11"),
         (try_end),
 	   ]),
@@ -15590,22 +15593,22 @@ mission_templates = [
 
        (1, 4, ti_once,
        [
-         #(assign, ":continue", 0),
+         (assign, ":continue", 0),
        
-         #(party_get_template_id, ":template", "$g_encountered_party"),
-         #(try_begin),       
+#         (party_get_template_id, ":template", "$g_encountered_party"),
+         (try_begin),       
 
-         #  (eq, ":template", "pt_looter_lair"),
-         #  (check_quest_active, "qst_save_relative_of_merchant"),
-         #  
-         #  (this_or_next|main_hero_fallen),
-         #  (eq, "$relative_of_merchant_is_found", 1),
-         #  
-         #  (assign, ":continue", 1),
-         #(else_try),
-         #  (this_or_next|neq|eq, ":template", "pt_looter_lair"),
-         #  (neg|check_quest_active, "qst_save_relative_of_merchant"),
-
+#           (eq, ":template", "pt_looter_lair"),
+#           (check_quest_active, "qst_save_relative_of_merchant"),
+           
+           (troop_slot_eq, "trp_npc11", slot_troop_met_previously, 0),
+           (main_hero_fallen),
+           #(eq, "$relative_of_merchant_is_found", 1),
+            #            (main_party_has_troop,"trp_npc11"),
+           (assign, ":continue", 1),
+         (else_try),
+           #(this_or_next|neq|eq, ":template", "pt_looter_lair"),
+           #(neg|check_quest_active, "qst_save_relative_of_merchant"),
            (troop_slot_eq, "trp_npc11", slot_troop_met_previously, 1),
            (store_mission_timer_a,":cur_time"),
            (ge, ":cur_time", 5),
@@ -15613,10 +15616,10 @@ mission_templates = [
            (this_or_next|main_hero_fallen),
            (num_active_teams_le, 1),
            
-         #  (assign, ":continue", 1),
-         #(try_end),  
-         #
-         #(eq, ":continue", 1),
+           (assign, ":continue", 1),
+         (try_end),  
+         
+         (eq, ":continue", 1),
        ],
        [
          (try_begin),

@@ -4387,6 +4387,7 @@ dialogs = [
   (is_between, "$g_talk_troop", companions_begin, companions_end),  
   (neg|troop_slot_eq, "$g_talk_troop", slot_troop_occupation, slto_kingdom_hero),
   
+    (neg|main_party_has_troop,"trp_npc11"),
   (troop_get_slot, ":prison_center", "$g_talk_troop", slot_troop_prisoner_of_party),
   (lt, ":prison_center", centers_begin),  
   ], "So... Do you want me back yet?", "companion_rehire",
