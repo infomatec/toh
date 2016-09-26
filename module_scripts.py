@@ -6562,6 +6562,7 @@ scripts = [
 
             (troop_set_slot, "trp_npc7", slot_troop_occupation, 0),
             (troop_set_slot, "trp_npc11", slot_troop_occupation, 0),
+            (troop_set_slot, "trp_npc16", slot_troop_occupation, 0),
             (assign, "$disable_local_histories", 1),
             #--
 	]),
@@ -30193,6 +30194,20 @@ scripts = [
 		(try_end),
 		##-
                 
+
+
+		##-meet Antonius
+		(try_begin),
+                
+
+			(troop_slot_eq, "trp_npc16", slot_troop_met_previously, 0),
+			(eq,":original_faction","fac_kingdom_7"),
+
+                        (store_relation, ":relation", "fac_kingdom_7", "fac_player_supporters_faction"),
+                        (gt, ":relation", 1),
+			(set_visitor, ":entry_no", "trp_npc16"),
+		(try_end),
+                ##-
 		##-meet Azhar
 		(try_begin),
                 

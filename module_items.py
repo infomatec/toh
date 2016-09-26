@@ -1063,7 +1063,10 @@ items = [
 #==Dirim quartermaster BEGIN
 #--armors
 ["vardian_guard_armor", "Vardian Guard Armor", [("vardian_guard_armor",0)], itp_type_body_armor  |itp_covers_legs ,0,
- 4120 , weight(25)|abundance(40)|head_armor(0)|body_armor(54)|leg_armor(16)|difficulty(12) ,imodbits_armor ],
+ 4120 , weight(25)|abundance(40)|head_armor(0)|body_armor(54)|leg_armor(18)|difficulty(12) ,imodbits_armor ],
+
+["dirim_lamellar", "Old Empire Lamellar", [("dirim_lamellar",0)], itp_type_body_armor  |itp_covers_legs ,0,
+ 2120 , weight(25)|abundance(40)|head_armor(0)|body_armor(48)|leg_armor(16)|difficulty(9) ,imodbits_plate ],
 ["dirim_jerkin", "Gambeson", [("dirim_armor_0",0)],  itp_type_body_armor  |itp_covers_legs ,0,
  800 , weight(18)|abundance(40)|head_armor(0)|body_armor(34)|leg_armor(10)|difficulty(7) ,imodbits_plate ],
 ["dirim_footman_armor", "Dirim Footman Armor", [("dirim_armor_1",0)],  itp_type_body_armor  |itp_covers_legs ,0,

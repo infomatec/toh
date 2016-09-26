@@ -943,7 +943,7 @@ strings = [
   ("npc1_signup_response_1", "Bon tu viens avec moi, je te garde jusqu'on trouve notre bonhomme, et il s'appelle General Linkadas pauvre gourde!"),
   ("npc2_signup_response_1", "That will do."),
   ("npc3_signup_response_1", "Um, that's a start. We can teach you the rest."),
-  ("npc4_signup_response_1", "That¿s the spirit I am looking for. There¿ll be plenty of killing and spoils with me, that¿s a promise."),
+  ("npc4_signup_response_1", "That's the spirit I am looking for. There'll be plenty of killing and spoils with me, that's a promise."),
   ("npc5_signup_response_1", "Of course, I wouldn't even be asking you to join if I was a spineless coward."),
   ("npc7_signup_response_1", "Yes, of course. I¿m a commander, not some reaver."),
   ("npc8_signup_response_1", "Fear not holy brother, my heart is pure and my intentions noble. My command is honest and I have nothing to hide from the higher powers."),

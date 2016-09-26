@@ -1745,11 +1745,10 @@ troops = [
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1,
    0x00000004400922812add2e4aca22372100000000001d67490000000000000000],
   #-------------------------------------
- ["npc16","Antonius","Antonius",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_peasant_dress,itm_nomad_boots, itm_dagger, itm_throwing_knives],
-   str_7|agi_11|int_8|cha_7|level(2),wp(80),knows_tracker_npc|
+ ["npc16","Antonius","Antonius",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_dirim_lamellar,itm_leather_boots, itm_sword_medieval_b_small],
+   str_14|agi_11|int_8|cha_7|level(20),wp(150),knows_warrior_npc|
    knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
-   0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
-
+ 0x0000000eb901700669c08eb663b1bf3d00000000001d23310000000000000000],
 #NPC system changes end
 
 
