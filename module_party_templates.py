@@ -74,6 +74,8 @@ party_templates = [
 	#("black_patrol","Black Patrol",icon_gray_knight,0,fac_knights_of_doomcall,soldier_personality,[(trp_order_knight,1,10),(trp_order_follower,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 	("doomcall_patrol","Doomcall Patrol",icon_gray_knight,0,fac_knights_of_doomcall,soldier_personality,[(trp_order_priest,0,4),(trp_order_knight,1,20),(trp_order_follower,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 
+	("sun_cult_patrol","Sun Cult Patrol",icon_gray_knight,0,fac_sun_cult,soldier_personality,[(trp_sacrifice_hunter,4),(trp_sun_followers,1,20),(trp_order_follower,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
+
 	#("white_patrol","New Order Patrol",icon_gray_knight,0,fac_the_new_order,soldier_personality,[(trp_order_billman,1,10),(trp_order_gunner,10,100),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 	("new_order_patrol","New Order Patrol",icon_gray_knight,0,fac_the_new_order,soldier_personality,[(trp_order_billman,1,10),(trp_order_gunner,10,100),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 
