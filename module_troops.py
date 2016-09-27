@@ -1314,6 +1314,20 @@ troops = [
   ["desert_bandit","Desert Bandit","Desert Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_mounted,0,0,fac_outlaws,
    [itm_arabian_sword_a,itm_winged_mace,itm_spear, itm_light_lance,itm_jarid,itm_jarid,itm_afirid_cloth_robe, itm_afirid_cloth_robe, itm_skirmisher_armor, itm_desert_turban, itm_turban,itm_leather_steppe_cap_b,itm_leather_covered_round_shield,itm_leather_covered_round_shield,itm_saddle_horse,itm_arabian_horse_a],
    def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_throw_3,guhulay_face_young_1, guhulay_face_old_2],
+#--Sun cult
+ ["acolyte_of_mekhresh","Acolyte of Mekhresh","Acolytes of Mekhresh",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_6,
+   [itm_bamboo_spear,itm_tab_shield_kite_a,
+    itm_afirid_inf_armor,itm_turban_mail_a,itm_afirid_boots_a,itm_afirid_boots_b],
+   def_attrib|level(9),wp(75),knows_common|knows_athletics_2,afirid_face_young_1, afirid_face_old_2],
+ ["disciple_of_mekhresh","Disciple of Mekhresh","Disciples of Mekhresh",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_6,
+   [itm_afirid_medium_spear,itm_tab_shield_kite_b,
+    itm_afirid_boots_b,itm_afirid_helmet_inf_1,itm_afirid_inf_armor_a],
+   def_attrib|level(14),wp_one_handed (85) | wp_two_handed (85) | wp_polearm (160) | wp_archery (75) | wp_crossbow (75) | wp_throwing (100),knows_common|knows_athletics_5|knows_power_throw_2|knows_ironflesh_1,afirid_face_young_1, afirid_face_old_2],
+ ["priest_of_mekhres","Priest of Mekhres","Priests of Mekhres",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
+   [itm_afirid_inf_armor_b,itm_afirid_helmet_inf_2,itm_afirid_boots_c,itm_afirid_boots_b,
+   itm_afirid_axe_a,itm_afirid_axe_b,itm_tab_shield_kite_c],
+   def_attrib|level(20),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (170) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_3|knows_ironflesh_2  | knows_power_throw_3|knows_athletics_4,afirid_face_middle_1, afirid_face_old_2],
+#--
   #-----------The Order--------------
 ["order_priest","Doomcall Priest","Doomcall priests",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse,0,0,fac_knights_of_doomcall,
    [itm_black_greaves,itm_doomcall_coat_of_plates,itm_order_winged_helmet,itm_sword_medieval_d_long,itm_tab_shield_kite_cav_b],
