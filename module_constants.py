@@ -1753,6 +1753,7 @@ num_black_guhulay_spawn_points = 1
 num_sea_raider_spawn_points = 2
 num_north_free_company_spawn_points = 1
 num_west_free_company_spawn_points = 1
+num_sons_of_mekhresh_spawn_points = 1
 num_south_free_company_spawn_points = 1
 num_doomcall_spawn_points = 1
 num_new_order_spawn_points = 1

@@ -74,9 +74,9 @@ party_templates = [
 	#("black_patrol","Black Patrol",icon_gray_knight,0,fac_knights_of_doomcall,soldier_personality,[(trp_order_knight,1,10),(trp_order_follower,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 	("doomcall_patrol","Doomcall Patrol",icon_gray_knight,0,fac_knights_of_doomcall,soldier_personality,[(trp_order_priest,0,4),(trp_order_knight,1,20),(trp_order_follower,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 
-	("sons_of_mekhresh_patrol","Sons Of Mekhresh Patrol",icon_gray_knight,0,fac_the_sons_of_mekhresh,soldier_personality,[(trp_priest_of_mekhresh,1,1),(trp_disciple_of_mekhresh,1,20),(trp_acolyte_of_mekhresh,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
+	("sons_of_mekhresh_patrol","Sons Of Mekhresh Patrol",icon_gray_knight,0,fac_sons_of_mekhresh,soldier_personality,[(trp_priest_of_mekhresh,1,1),(trp_disciple_of_mekhresh,1,20),(trp_acolyte_of_mekhresh,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 
-	("sons_of_mekhresh_army","Sons Of Mekhresh Army",icon_gray_knight,0,fac_the_sons_of_mekhresh,soldier_personality,[(trp_priest_of_mekhresh,1,1),(trp_disciple_of_mekhresh,1,20),(trp_acolyte_of_mekhresh,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
+	("sons_of_mekhresh_army","Sons Of Mekhresh Army",icon_gray_knight,0,fac_sons_of_mekhresh,soldier_personality,[(trp_priest_of_mekhresh,1,1),(trp_disciple_of_mekhresh,1,20),(trp_acolyte_of_mekhresh,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 	#("white_patrol","New Order Patrol",icon_gray_knight,0,fac_the_new_order,soldier_personality,[(trp_order_billman,1,10),(trp_order_gunner,10,100),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 	("new_order_patrol","New Order Patrol",icon_gray_knight,0,fac_the_new_order,soldier_personality,[(trp_order_billman,1,10),(trp_order_gunner,10,100),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 

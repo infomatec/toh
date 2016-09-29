@@ -1323,7 +1323,7 @@ troops = [
    [itm_afirid_medium_spear,itm_tab_shield_kite_b,
     itm_afirid_boots_b,itm_afirid_helmet_inf_1,itm_afirid_inf_armor_a],
    def_attrib|level(14),wp_one_handed (85) | wp_two_handed (85) | wp_polearm (160) | wp_archery (75) | wp_crossbow (75) | wp_throwing (100),knows_common|knows_athletics_5|knows_power_throw_2|knows_ironflesh_1,afirid_face_young_1, afirid_face_old_2],
- ["priest_of_mekhres","Priest of Mekhres","Priests of Mekhres",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
+ ["priest_of_mekhresh","Priest of Mekhresh","Priests of Mekhresh",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
    [itm_afirid_inf_armor_b,itm_afirid_helmet_inf_2,itm_afirid_boots_c,itm_afirid_boots_b,
    itm_afirid_axe_a,itm_afirid_axe_b,itm_tab_shield_kite_c],
    def_attrib|level(20),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (170) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_3|knows_ironflesh_2  | knows_power_throw_3|knows_athletics_4,afirid_face_middle_1, afirid_face_old_2],

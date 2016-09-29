@@ -34644,7 +34644,7 @@ scripts = [
        (set_spawn_radius, 25),
        (spawn_around_party,":spawn_point","pt_west_free_company"),
      (try_end),
-		#--free companies end
+		#--sons_of_mekhresh 
 		#--doomcall
 	(party_template_set_slot, "pt_sons_of_mekhresh_patrol", slot_party_template_lair_spawnpoint, "p_sons_of_mekhresh_spawn_point"),
      (try_begin),
