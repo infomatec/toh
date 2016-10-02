@@ -343,10 +343,11 @@ parties = [
   ("west_free_company_spawn_point"  ,"the west",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-65.94, 30.77),[(trp_looter,15,0)]),
   ("south_free_company_spawn_point"  ,"the south",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-42.72, -55.23),[(trp_looter,15,0)]),
 	#--
- #--doomcall 
+ #--cults
    ("doomcall_spawn_point"  ,"the lac",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-24, -24),[(trp_looter,15,0)]),
   ("new_order_spawn_point"  ,"the mountain",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-52.58, 53.74),[(trp_looter,15,0)]),
   ("sons_of_mekhresh_spawn_point"  ,"the desert",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(32.95, -54.71),[(trp_looter,15,0)]),
+  ("desciplined_spawn_point"  ,"the river",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(6.17, 11.49),[(trp_looter,15,0)]),
  
  #--
  

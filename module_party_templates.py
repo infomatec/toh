@@ -74,6 +74,7 @@ party_templates = [
 	#("black_patrol","Black Patrol",icon_gray_knight,0,fac_knights_of_doomcall,soldier_personality,[(trp_order_knight,1,10),(trp_order_follower,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 	("doomcall_patrol","Doomcall Patrol",icon_gray_knight,0,fac_knights_of_doomcall,soldier_personality,[(trp_order_priest,0,4),(trp_order_knight,1,20),(trp_order_follower,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 
+	("desciplined_patrol","Desciplined Party",icon_peasant,0,fac_desciplined,merchant_personality,[(trp_warrior_monk,2,5),(trp_flagellant,10,20),(trp_undesciplined,10,30)]),
 	("sons_of_mekhresh_patrol","Sons Of Mekhresh Patrol",icon_gray_knight,0,fac_sons_of_mekhresh,soldier_personality,[(trp_priest_of_mekhresh,1,1),(trp_disciple_of_mekhresh,1,20),(trp_acolyte_of_mekhresh,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),
 
 	("sons_of_mekhresh_army","Sons Of Mekhresh Army",icon_gray_knight,0,fac_sons_of_mekhresh,soldier_personality,[(trp_priest_of_mekhresh,1,1),(trp_disciple_of_mekhresh,1,20),(trp_acolyte_of_mekhresh,10,100),(trp_paysan,2,20,pmf_is_prisoner),(trp_common_prisoner,1,10,pmf_is_prisoner)]),

@@ -81,6 +81,7 @@ factions = [
   ("knights_of_doomcall","Knights Of Doomcall", 0, 0.5,[("player_supporters_faction",-0.5),("player_faction",-0.1),("kingdom_1",0),("kingdom_7",-1),("kingdom_2",-1),("kingdom_3",-1),("kingdom_4",-1),("kingdom_5",-1),("kingdom_6",-1),("the_new_order",-1)], [], 0x000000),
    ("the_new_order","The New Order", 0, 0.5,[("player_supporters_faction",-0.01),("player_faction",0.0),("kingdom_5",1),("kingdom_7",-1),("kingdom_1",-1),("knights_of_doomcall",-1)], [], 0x6c8057), 
   ("sons_of_mekhresh","The Sons Of Mekhresh", 0, 0.5,[("player_supporters_faction",-0.5),("player_faction",-0.1),("knights_of_doomcall",-0.1),("kingdom_1",-1),("kingdom_7",-1),("kingdom_2",-1),("kingdom_3",-1),("kingdom_4",-1),("kingdom_5",-1),("kingdom_6",0),("the_new_order",-1)], [], 0x8c8859),
+  ("desciplined","Desciplined", 0, 0.5,[("outlaws",-0.05),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05),("player_supporters_faction",0),("player_faction",0),("knights_of_doomcall",-1),("sons_of_mekhresh",-1),("galnar_clan",-1)], [], 0xcf535f),
   ("desert_tribes","Desert Tribes", 0, 0.5,[("player_supporters_faction",-0.01),("kingdom_6",-1),("kingdom_3",0.5)], [], 0xe0b25b),  
   ("golden_horde","Golden Hordes", 0, 0.5,[("player_supporters_faction",-0.01),("kingdom_6",-1),("kingdom_5",-1),("kingdom_3",0.5)], [], 0xe0b26a),   
  

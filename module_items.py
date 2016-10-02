@@ -361,6 +361,7 @@ items = [
 ["pilgrim_disguise", "Pilgrim Disguise", [("pilgrim_outfit",0)], 0| itp_type_body_armor |itp_covers_legs |itp_civilian ,0, 25 , weight(2)|abundance(100)|head_armor(0)|body_armor(19)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 ["pilgrim_hood", "Pilgrim Hood", [("pilgrim_hood",0)], 0| itp_type_head_armor |itp_civilian  ,0, 35 , weight(1.25)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
+["monk_robe", "Monk Robe", [("monk_robe",0)], 0| itp_type_body_armor |itp_covers_legs |itp_civilian ,0, 35 , weight(2)|abundance(20)|head_armor(2)|body_armor(14)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 # ARMOR
 #handwear
 ["leather_gloves","Leather Gloves", [("leather_gloves_L",0)], itp_merchandise|itp_type_hand_armor,0, 90, weight(0.25)|abundance(120)|body_armor(2)|difficulty(0),imodbits_cloth],
@@ -1607,6 +1608,12 @@ items = [
  ["new_order_brigandine", "White Order Brigandine", [("white_order_brigandine",0)], itp_type_body_armor|itp_covers_legs,0,
  2130 , weight(20)|abundance(1)|head_armor(0)|body_armor(50)|leg_armor(10)|difficulty(8) ,imodbits_armor ],
 #NEW ORDER END
+#DESCIPLINED ITEMS
+  ["morgenstern",         "Long Morning Star", [("morgenstern_no2",0)], itp_type_polearm|itp_merchandise| itp_primary|itp_two_handed|itp_penalty_with_shield|itp_wooden_parry, itcf_carry_spear|itc_guandao,
+ 450 , weight(3.25)|difficulty(8)|spd_rtng(83) | weapon_length(130)|swing_damage(30 , cut) | thrust_damage(20 ,  blunt),imodbits_polearm ],
+["warrior_monk_armor", "Warrior Monk Armor", [("warrior_monk_armor",0)],  itp_type_body_armor|itp_covers_legs,0,
+	 550 , weight(14)|abundance(20)|head_armor(0)|body_armor(32)|leg_armor(16)|difficulty(0) ,imodbits_cloth ],
+#DESCIPLINED ITEMS END
 ##MERCENARIES ITEMS
     ["aketon", "Aketon", [("aketon",0)],  itp_type_body_armor|itp_covers_legs,0,
 	 425 , weight(12)|abundance(80)|head_armor(0)|body_armor(28)|leg_armor(16)|difficulty(0) ,imodbits_cloth ],
@@ -2437,8 +2444,8 @@ items = [
  # 169 , weight(7)|difficulty(18)|spd_rtng(50) | weapon_length(126)|swing_damage(40 , blunt) | thrust_damage(30 ,  blunt),imodbits_polearm ],
 # ["staff",         "Staff", [("wooden_staff",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry|itp_wooden_attack, itc_staff|itcf_carry_sword_back,
  # 36 , weight(1.5)|difficulty(0)|spd_rtng(100) | weapon_length(130)|swing_damage(18 , blunt) | thrust_damage(19 ,  blunt),imodbits_polearm ],
-# ["quarter_staff", "Quarter Staff", [("quarter_staff",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_wooden_parry|itp_wooden_attack, itc_staff|itcf_carry_sword_back,
- # 60 , weight(2)|difficulty(0)|spd_rtng(104) | weapon_length(140)|swing_damage(20 , blunt) | thrust_damage(20 ,  blunt),imodbits_polearm ],
+ ["quarter_staff", "Quarter Staff", [("quarter_staff",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_wooden_parry|itp_wooden_attack, itc_staff|itcf_carry_sword_back,
+ 60 , weight(2)|difficulty(0)|spd_rtng(104) | weapon_length(140)|swing_damage(20 , blunt) | thrust_damage(20 ,  blunt),imodbits_polearm ],
 ["iron_staff",         "Iron Staff", [("iron_staff",0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary, itc_nodachi |itcf_carry_sword_back,
  202 , weight(2)|difficulty(0)|spd_rtng(95) | weapon_length(140)|swing_damage(25 , blunt) | thrust_damage(26 ,  blunt),imodbits_polearm ],
 #-----------fladin osp-----------------

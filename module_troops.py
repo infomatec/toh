@@ -1328,6 +1328,21 @@ troops = [
    itm_afirid_axe_a,itm_afirid_axe_b,itm_tab_shield_kite_c],
    def_attrib|level(20),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (170) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_3|knows_ironflesh_2  | knows_power_throw_3|knows_athletics_4,afirid_face_middle_1, afirid_face_old_2],
 #--
+#--Desciplined
+
+ ["undesciplined","Undesciplined","Undesciplined",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_desciplined,
+   [itm_quarter_staff,
+   itm_straw_hat,itm_linen_tunic,itm_wrapping_boots],
+   def_attrib|level(9),wp(75),knows_common,pravar_face_young_1, pravar_face_old_2],
+ ["flagellant","Flagellant","Flagellants",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_desciplined,
+   [itm_long_war_club,
+    itm_straw_hat,itm_monk_robe],
+   def_attrib|level(14),wp_polearm (160) ,knows_common|knows_ironflesh_5,pravar_face_young_1, pravar_face_old_2],
+ ["warrior_monk","Warrior Monk","Warrior Monks",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_desciplined,
+   [itm_warrior_monk_armor,itm_splinted_leather_greaves,itm_simple_chapel,
+   itm_morgenstern],
+   def_attrib|level(20),wp_two_handed (105)|wp_polearm (170),knows_common|knows_ironflesh_5,pravar_face_middle_1, pravar_face_old_2],
+#--
   #-----------The Order--------------
 ["order_priest","Doomcall Priest","Doomcall priests",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse,0,0,fac_knights_of_doomcall,
    [itm_black_greaves,itm_doomcall_coat_of_plates,itm_order_winged_helmet,itm_sword_medieval_d_long,itm_tab_shield_kite_cav_b],
