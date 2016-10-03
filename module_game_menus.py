@@ -4040,6 +4040,11 @@ game_menus = [
             (call_script,"script_change_player_relation_with_troop", ":ally_leader", ":rel_boost"),
           (try_end),
           (assign, "$talk_context", tc_ally_thanks),
+          (try_begin),
+                (eq,":ally_faction","fac_desciplined"),
+                (troop_slot_eq, "trp_npc8", slot_troop_met_previously, 0),
+                (assign,":ally_leader","trp_npc8"),
+          (try_end),
           (call_script, "script_setup_troop_meeting", ":ally_leader", ":ally_leader_dna"),
         (else_try),
           # Talk to enemy leaders

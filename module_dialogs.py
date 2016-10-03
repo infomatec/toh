@@ -20683,6 +20683,21 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   
   [anyone,"start", [
                       (eq,"$talk_context",tc_ally_thanks),
+                    #--(toh 0.53)Vultuire 
+                    (troop_slot_eq, "trp_npc8", slot_troop_met_previously, 0),
+                     (ge, "$g_encountered_party", 0),
+                     (party_is_active, "$g_encountered_party"),
+                     (party_get_template_id, ":encountered_party_template", "$g_encountered_party"),
+                     (eq, ":encountered_party_template", "pt_desciplined_patrol"),
+                     #--
+                    (party_get_num_companions, reg1, "$g_encountered_party"),
+                    (val_sub, reg1, 1),
+                    ],
+   "Thank you for your help {sir/madam}. You saved {reg1?our lives:my life} out there.", "companion_recruit_intro_response", [
+                (troop_set_slot, "trp_npc8", slot_troop_occupation, 0),#npc8_Vultuire activation
+       ]],
+  [anyone,"start", [
+                      (eq,"$talk_context",tc_ally_thanks),
                     (ge, "$g_relation_boost", 5),
                     #--(toh 0.53) Azhar
                     (troop_slot_eq, "trp_npc5", slot_troop_met_previously, 0),
@@ -20691,7 +20706,6 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                      (party_get_template_id, ":encountered_party_template", "$g_encountered_party"),
                      (eq, ":encountered_party_template", "pt_kingdom_caravan_party"),
                      #--
-                    (display_message,"@caravane saved"),
                     (party_get_num_companions, reg1, "$g_encountered_party"),
                     (val_sub, reg1, 1),
                     ],
