@@ -1116,7 +1116,7 @@ troops = [
    itm_afirid_axe_a,itm_afirid_axe_b,itm_tab_shield_kite_c],
    def_attrib|level(20),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (170) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_3|knows_ironflesh_2  | knows_power_throw_3|knows_athletics_4,afirid_face_middle_1, afirid_face_old_2],
  ["afirid_heavy_infantry","Afirid Heavy infantry","Afirid Heavy Infantry",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
-   [itm_military_pick,itm_afirid_two_handed_mace_1,itm_afirid_two_handed_axe_a,itm_mace_4,
+   [itm_military_pick,itm_afirid_two_handed_axe_a,itm_mace_4,
    itm_afirid_boots_d, itm_afirid_boots_c,itm_afirid_inf_armor_c,itm_afirid_helmet_inf_3,itm_mail_mittens,itm_tab_shield_kite_d],
    def_attrib|level(25),wp_one_handed (150) | wp_two_handed (135) | wp_polearm (180) | wp_archery (75) | wp_crossbow (75) | wp_throwing (140),knows_common| knows_ironflesh_3|knows_power_strike_1|knows_athletics_3,afirid_face_middle_1, afirid_face_older_2],
 
@@ -1316,29 +1316,29 @@ troops = [
    def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_throw_3,guhulay_face_young_1, guhulay_face_old_2],
 #--Sun cult
  ["acolyte_of_mekhresh","Acolyte of Mekhresh","Acolytes of Mekhresh",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_sons_of_mekhresh,
-   [itm_bamboo_spear,itm_tab_shield_kite_a,
+   [itm_bamboo_spear,
     itm_afirid_cult_armor_a,itm_sub_desert_helmet_a,itm_afirid_boots_a,itm_afirid_boots_b],
-   def_attrib|level(9),wp(75),knows_common|knows_athletics_2,afirid_face_young_1, afirid_face_old_2],
+   def_attrib|level(9),wp(75)|wp_polearm(150) ,knows_common|knows_athletics_2|knows_power_strike_4,afirid_face_young_1, afirid_face_old_2],
  ["disciple_of_mekhresh","Disciple of Mekhresh","Disciples of Mekhresh",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_sons_of_mekhresh,
-   [itm_afirid_medium_spear,itm_tab_shield_kite_b,
+         [itm_afirid_mace_1,itm_tab_shield_kite_b,
     itm_afirid_boots_b,itm_sub_desert_helmet_b,itm_afirid_cult_armor_b],
    def_attrib|level(14),wp_one_handed (85) | wp_two_handed (85) | wp_polearm (160) | wp_archery (75) | wp_crossbow (75) | wp_throwing (100),knows_common|knows_athletics_5|knows_power_throw_2|knows_ironflesh_1,afirid_face_young_1, afirid_face_old_2],
  ["priest_of_mekhresh","Priest of Mekhresh","Priests of Mekhresh",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_sons_of_mekhresh,
    [itm_afirid_cult_armor_c,itm_sub_desert_helmet_c,itm_afirid_boots_c,itm_afirid_boots_b,
-   itm_afirid_axe_a,itm_afirid_axe_b,itm_tab_shield_kite_c],
+   itm_afirid_two_handed_mace_1],
    def_attrib|level(20),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (170) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_3|knows_ironflesh_2  | knows_power_throw_3|knows_athletics_4,afirid_face_middle_1, afirid_face_old_2],
 #--
 #--Desciplined
 
- ["undesciplined","Undesciplined","Undesciplined",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_desciplined,
+ ["undisciplined","Undisciplined","Undisciplined",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_disciplined,
    [itm_quarter_staff,
    itm_straw_hat,itm_linen_tunic,itm_wrapping_boots],
    def_attrib|level(9),wp(75),knows_common,pravar_face_young_1, pravar_face_old_2],
- ["flagellant","Flagellant","Flagellants",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_desciplined,
+ ["flagellant","Flagellant","Flagellants",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_disciplined,
    [itm_long_war_club,
     itm_straw_hat,itm_monk_robe],
    def_attrib|level(14),wp_polearm (160) ,knows_common|knows_ironflesh_5,pravar_face_young_1, pravar_face_old_2],
- ["warrior_monk","Warrior Monk","Warrior Monks",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_desciplined,
+ ["warrior_monk","Warrior Monk","Warrior Monks",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_disciplined,
    [itm_warrior_monk_armor,itm_splinted_leather_greaves,itm_simple_chapel,
    itm_morgenstern],
    def_attrib|level(20),wp_two_handed (105)|wp_polearm (170),knows_common|knows_ironflesh_5,pravar_face_middle_1, pravar_face_old_2],
@@ -1776,7 +1776,7 @@ troops = [
   #-------------------------------------
  ["npc16","Antonius","Antonius",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_dirim_lamellar,itm_leather_boots, itm_sword_medieval_b_small],
    str_14|agi_11|int_8|cha_7|level(20),wp(150),knows_warrior_npc|
-   knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
+   knows_trainer_1|knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
  0x0000000eb901700669c08eb663b1bf3d00000000001d23310000000000000000],
 #NPC system changes end
 
@@ -1790,7 +1790,7 @@ troops = [
   knight_attrib_5,wp(350),knight_skills_5|knows_trainer_6, 0x0000000d640091ca46dc8db1dbadb6a800000000001db6e40000000000000000,guhulay_face_old_2],
   ["kingdom_4_lord",  "King Viskhard",  "Viskhard",  tf_hero, 0,reserved,  fac_kingdom_4,[itm_nord_plated_warhorse,    itm_nobleman_outfit,    itm_leather_boots,              itm_mail_boots,                 itm_plate_armor,  itm_gauntlets,    itm_great_axe,           itm_tab_shield_round_e,    itm_hadvog_king_helm],
   knight_attrib_5,wp(350),knight_skills_5|knows_trainer_4, 0x0000000c170003075dfdb64925b32e3a00000000001f37a20000000000000000, hadvog_face_older_2],
-  ["kingdom_5_lord",  "Duke Montagu",  "Montagu",  tf_hero, 0,reserved,  fac_kingdom_5,[itm_plated_charger_6,  itm_imifir_rich_jacket_2,             itm_leather_boots,              itm_splinted_leather_greaves,   itm_imifir_ducal_armor,  itm_gauntlets,         itm_sword_of_war,         itm_steel_shield,        itm_duc_sallet],
+  ["kingdom_5_lord",  "Duke Montagu",  "Montagu",  tf_hero, 0,reserved,  fac_kingdom_5,[itm_destrier,             itm_leather_boots,              itm_splinted_leather_greaves,   itm_imifir_ducal_armor,  itm_gauntlets,         itm_sword_of_war,         itm_steel_shield,        itm_duc_sallet],
   knight_attrib_4,wp(300),knight_skills_4|knows_trainer_5, 0x0000000d3f0903c653246cb89bb0aa2300000000001f325b0000000000000000, imifir_face_old_2],
   ["kingdom_6_lord",  "Sultan Ayzar",  "Ayzar",  tf_hero, 0,reserved,  fac_kingdom_6,[itm_afirid_noble_caftan_cloak, itm_warhorse_afirid,     itm_sultan_armor,          itm_afirid_boots_c,   itm_sultan_helm,  itm_mail_mittens,      itm_luc_zulfiqar,    itm_tab_shield_small_round_c],
   knight_attrib_4,wp(280),knight_skills_5|knows_trainer_5, 0x0000000d9c00a2c034dba2385c7d515100000000001db71b0000000000000000, afirid_face_old_2],
@@ -1800,7 +1800,7 @@ troops = [
   #------------------------
 	#--------------------
   ["kingdom_8_lord",  "Governor Jame Bodlos",  "Jame Bodlos",  tf_hero, 0,reserved,  fac_kingdom_8,
-  [itm_plated_charger_6,   itm_baretunic_blue,        itm_black_boots,                  itm_plate_boots,               itm_company_armor, itm_gauntlets,    itm_atian_longsword,      itm_steel_buckler1,       itm_company_helm,itm_flintlock_pistol_1, itm_cartridges],
+  [itm_destrier,   itm_baretunic_blue,        itm_black_boots,                  itm_plate_boots,               itm_company_armor, itm_gauntlets,    itm_atian_longsword,      itm_steel_buckler1,       itm_company_helm,itm_flintlock_pistol_1, itm_cartridges],
   knight_attrib_5,wp(250),knight_skills_5|knows_trainer_5, 0x00000005bd082508059aa9bd176da51400000000001d4b510000000000000000,pravar_face_young_2],
   #------------------------
 

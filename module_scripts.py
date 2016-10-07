@@ -5110,10 +5110,10 @@ scripts = [
       (store_script_param_1, ":amount"),
       (try_begin),
         (eq, ":amount", 1),
-        (str_store_string, s1, "str_1_denar"),
+        (str_store_string, s1, "str_1_lobari"),
       (else_try),
         (assign, reg1, ":amount"),
-        (str_store_string, s1, "str_reg1_denars"),
+        (str_store_string, s1, "str_reg1_lobaris"),
       (try_end),
       (set_result_string, s1),
   ]),
@@ -21628,7 +21628,7 @@ scripts = [
       (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
       (troop_get_slot, ":cur_wealth", ":troop_no", slot_troop_wealth),
 
-      (assign, ":weekly_income", 750), #let every hero receive 750 denars by default
+      (assign, ":weekly_income", 750), #let every hero receive 750 lobaris by default
 
       (store_character_level, ":troop_level", ":troop_no"),
       (store_mul, ":level_income", ":troop_level", 10),
@@ -28410,7 +28410,7 @@ scripts = [
       (assign, reg2, ":cur_debt"),
       (troop_set_slot, ":troop_no", slot_troop_player_debt, ":cur_debt"),
       (str_store_troop_name_link, s1, ":troop_no"),
-      (display_message, "@You now owe {reg2} denars to {s1}."),
+      (display_message, "@You now owe {reg2} lobaris to {s1}."),
   ]),
 
 
@@ -30205,7 +30205,7 @@ scripts = [
 			(eq,":original_faction","fac_kingdom_7"),
 
                         (store_relation, ":relation", "fac_kingdom_7", "fac_player_supporters_faction"),
-                        (gt, ":relation", 1),
+                        (gt, ":relation", 10),
 			(set_visitor, ":entry_no", "trp_npc16"),
 		(try_end),
                 ##-
@@ -30370,8 +30370,9 @@ scripts = [
        (agent_get_troop_id, ":cur_troop", ":cur_agent"),
        #--test (toh 0.5)
 	   (this_or_next|is_between, ":cur_troop", mercenary_troops_begin, mercenary_troops_end),
-					##--marina
-					(this_or_next|eq, ":cur_troop", "trp_npc7"),
+					##--companions
+					(this_or_next|eq, ":cur_troop", "trp_npc7"),#marina
+					(this_or_next|eq, ":cur_troop", "trp_npc16"),#antonius
 					#--
 					(is_between, ":cur_troop", walkers_begin, walkers_end),
        (val_add, ":num_walkers", 1),
@@ -34645,17 +34646,17 @@ scripts = [
        (set_spawn_radius, 25),
        (spawn_around_party,":spawn_point","pt_west_free_company"),
      (try_end),
-		#--desciplined 
-	(party_template_set_slot, "pt_desciplined_patrol", slot_party_template_lair_spawnpoint, "p_desciplined_spawn_point"),
+		#--disciplined 
+	(party_template_set_slot, "pt_disciplined_patrol", slot_party_template_lair_spawnpoint, "p_disciplined_spawn_point"),
      (try_begin),
-       (store_num_parties_of_template, ":num_parties", "pt_desciplined_patrol"),
+       (store_num_parties_of_template, ":num_parties", "pt_disciplined_patrol"),
        (lt,":num_parties",6),
-       (store_random,":spawn_point",num_desciplined_spawn_points),
-       (val_add,":spawn_point","p_desciplined_spawn_point"),
+       (store_random,":spawn_point",num_disciplined_spawn_points),
+       (val_add,":spawn_point","p_disciplined_spawn_point"),
        (set_spawn_radius, 25),
-       (spawn_around_party,":spawn_point","pt_desciplined_patrol"),
+       (spawn_around_party,":spawn_point","pt_disciplined_patrol"),
      (try_end),
-		#--desciplined end
+		#--disciplined end
 		#--sons of mekhresh
 	(party_template_set_slot, "pt_sons_of_mekhresh_patrol", slot_party_template_lair_spawnpoint, "p_sons_of_mekhresh_spawn_point"),
      (try_begin),
@@ -35217,11 +35218,11 @@ scripts = [
      (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
      (val_min, ":volunteer_amount", ":free_capacity"),
      (store_troop_gold, ":gold", "trp_player"),
-     (store_div, ":gold_capacity", ":gold", 10),#10 denars per man
+     (store_div, ":gold_capacity", ":gold", 10),#10 lobaris per man
      (val_min, ":volunteer_amount", ":gold_capacity"),
      (party_add_members, "p_main_party", ":volunteer_troop", ":volunteer_amount"),
      (party_set_slot, "$current_town", slot_center_volunteer_troop_amount, -1),
-     (store_mul, ":cost", ":volunteer_amount", 10),#10 denars per man
+     (store_mul, ":cost", ":volunteer_amount", 10),#10 lobaris per man
      (troop_remove_gold, "trp_player", ":cost"),
      ]),
 
@@ -35248,11 +35249,11 @@ scripts = [
 		 (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
 		 (val_min, ":volunteer_amount", ":free_capacity"),
 		 (store_troop_gold, ":gold", "trp_player"),
-		 (store_div, ":gold_capacity", ":gold", 50),#600 denars per man
+		 (store_div, ":gold_capacity", ":gold", 50),#600 lobaris per man
 		 (val_min, ":volunteer_amount", ":gold_capacity"),
 		 (party_add_members, "p_main_party", ":volunteer_troop", ":volunteer_amount"),
 		 (party_set_slot, "$current_town", slot_center_volunteer_troop_amount, -1),
-		 (store_mul, ":cost", ":volunteer_amount", 50),#600 denars per man
+		 (store_mul, ":cost", ":volunteer_amount", 50),#600 lobaris per man
 		 (troop_remove_gold, "trp_player", ":cost"),
 		 ]),
 		#--
@@ -35278,11 +35279,11 @@ scripts = [
 		 (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
 		 (val_min, ":volunteer_amount", ":free_capacity"),
 		 (store_troop_gold, ":gold", "trp_player"),
-		 (store_div, ":gold_capacity", ":gold", 50),#600 denars per man
+		 (store_div, ":gold_capacity", ":gold", 50),#600 lobaris per man
 		 (val_min, ":volunteer_amount", ":gold_capacity"),
 		 (party_add_members, "p_main_party", ":volunteer_troop", ":volunteer_amount"),
 		 (party_set_slot, "$current_town", slot_center_volunteer_troop_amount, -1),
-		 (store_mul, ":cost", ":volunteer_amount", 50),#600 denars per man
+		 (store_mul, ":cost", ":volunteer_amount", 50),#600 lobaris per man
 		 (troop_remove_gold, "trp_player", ":cost"),
 		 ]),
 		#--
@@ -35302,16 +35303,16 @@ scripts = [
 			# (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
 			# (val_min, ":volunteer_amount", ":free_capacity"),
 			# (store_troop_gold, ":gold", "trp_player"),
-			# (store_div, ":gold_capacity", ":gold", 50),#50 denars per man
+			# (store_div, ":gold_capacity", ":gold", 50),#50 lobaris per man
 			# (val_min, ":volunteer_amount", ":gold_capacity"),
 			(party_remove_members, "p_main_party", "trp_paysan", ":volunteer_amount"),
 			(party_add_members, "p_main_party", ":troop_no", ":volunteer_amount"),
 			(party_set_slot, "$current_town", slot_center_volunteer_troop_amount, -1),
 			# (try_begin),
 				# (eq,":troop_no","trp_novice_cavalryman"),
-				# (store_mul, ":cost", ":volunteer_amount", 250),#50 denars per man on foot
+				# (store_mul, ":cost", ":volunteer_amount", 250),#50 lobaris per man on foot
 			# (else_try),
-				(store_mul, ":cost", ":volunteer_amount", 50),#50 denars per man on foot
+				(store_mul, ":cost", ":volunteer_amount", 50),#50 lobaris per man on foot
 			# (try_end),
 			(troop_remove_gold, "trp_player", ":cost"),
 		]),
@@ -35612,7 +35613,7 @@ scripts = [
         (troop_set_slot, "trp_npc5", slot_troop_personalityclash2_object, "trp_npc11"),  #beheshtur- katrin
         (troop_set_slot, "trp_npc5", slot_troop_personalitymatch_object, "trp_npc4"),  #beheshtur - rolf
         (troop_set_slot, "trp_npc5", slot_troop_home, "p_town_14"), #Gohmasda
-        (troop_set_slot, "trp_npc5", slot_troop_payment_request, 400),
+        (troop_set_slot, "trp_npc5", slot_troop_payment_request, 950),
 		(troop_set_slot, "trp_npc5", slot_troop_kingsupport_argument, argument_ruler),
 		(troop_set_slot, "trp_npc5", slot_troop_kingsupport_opponent, "trp_npc9"), #firentis
 		(troop_set_slot, "trp_npc5", slot_troop_town_with_contacts, "p_town_10"), #khosot
@@ -35629,7 +35630,7 @@ scripts = [
         (troop_set_slot, "trp_npc6", slot_troop_personalityclash2_object, "trp_npc13"), #firenz - nizar
         (troop_set_slot, "trp_npc6", slot_troop_personalitymatch_object, "trp_npc12"),  #firenz - jeremus
         (troop_set_slot, "trp_npc6", slot_troop_home, "p_town_4"), #Kalisos
-        (troop_set_slot, "trp_npc6", slot_troop_payment_request, 0),
+        (troop_set_slot, "trp_npc6", slot_troop_payment_request, 1),
 		(troop_set_slot, "trp_npc6", slot_troop_kingsupport_argument, argument_victory),
 		(troop_set_slot, "trp_npc6", slot_troop_kingsupport_opponent, "trp_npc8"), #firentis
 		(troop_set_slot, "trp_npc6", slot_troop_town_with_contacts, "p_town_7"), #lankladel
@@ -35663,7 +35664,7 @@ scripts = [
         (troop_set_slot, "trp_npc8", slot_troop_personalityclash2_object, "trp_npc3"), #matheld - ymira
         (troop_set_slot, "trp_npc8", slot_troop_personalitymatch_object, "trp_npc13"),  #matheld - nizar
         (troop_set_slot, "trp_npc8", slot_troop_home, "p_sea_raider_spawn_point_2"), #Gundig's Point
-        (troop_set_slot, "trp_npc8", slot_troop_payment_request, 500),
+        (troop_set_slot, "trp_npc8", slot_troop_payment_request, 1),
 		(troop_set_slot, "trp_npc8", slot_troop_kingsupport_argument, argument_lords),
 		(troop_set_slot, "trp_npc8", slot_troop_kingsupport_opponent, "trp_npc2"), #rijat
 		(troop_set_slot, "trp_npc8", slot_troop_town_with_contacts, "p_town_12"), #bulcush
@@ -35712,7 +35713,7 @@ scripts = [
         (troop_set_slot, "trp_npc11", slot_troop_personalityclash2_object, "trp_npc5"),  #katrin - beheshtur
         (troop_set_slot, "trp_npc11", slot_troop_personalitymatch_object, "trp_npc10"),  #katrin likes bunduk
         (troop_set_slot, "trp_npc11", slot_troop_home, "p_town_6"), #Pravar
-        (troop_set_slot, "trp_npc11", slot_troop_payment_request, 100),
+        (troop_set_slot, "trp_npc11", slot_troop_payment_request, 0),
 		(troop_set_slot, "trp_npc11", slot_troop_kingsupport_argument, argument_claim),
 		(troop_set_slot, "trp_npc11", slot_troop_kingsupport_opponent, "trp_npc15"), #borcha
 		(troop_set_slot, "trp_npc11", slot_troop_town_with_contacts, "p_town_6"), #pravar
@@ -35793,7 +35794,7 @@ scripts = [
         (troop_set_slot, "trp_npc16", slot_troop_personalityclash2_object, "trp_npc1"), #klethi - borcha
         (troop_set_slot, "trp_npc16", slot_troop_personalitymatch_object, "trp_npc7"),  #deshavi - klethi
         (troop_set_slot, "trp_npc16", slot_troop_home, "p_village_20"), #Uslum
-        (troop_set_slot, "trp_npc16", slot_troop_payment_request, 200),
+        (troop_set_slot, "trp_npc16", slot_troop_payment_request, 500),
 		(troop_set_slot, "trp_npc16", slot_troop_kingsupport_argument, argument_lords),
 		(troop_set_slot, "trp_npc16", slot_troop_kingsupport_opponent, "trp_npc12"), #nizar
  		(troop_set_slot, "trp_npc16", slot_troop_town_with_contacts, "p_town_9"), #vodianer
@@ -36831,7 +36832,7 @@ scripts = [
 
   # script_get_win_amount_for_tournament_bet
   # Input: none
-  # Output: reg0 = win_amount_with_100_denars
+  # Output: reg0 = win_amount_with_100_lobaris
   ("get_win_amount_for_tournament_bet",
     [
         (party_get_slot, ":player_odds", "$current_town", slot_town_player_odds),
@@ -36855,7 +36856,7 @@ scripts = [
         (try_end),
         (val_mul, ":win_amount", ":player_odds"),
         (val_div, ":win_amount", 100),
-        (val_add, ":win_amount", 100), #win amount when 100 denars is placed
+        (val_add, ":win_amount", 100), #win amount when 100 lobaris is placed
         (assign, reg0, ":win_amount"),
      ]),
 
@@ -48358,7 +48359,7 @@ scripts = [
         #For now it is removed as Armagan's decision, we can add this option in later patchs. I and Armagan accept it has good potential. But this system needs also
         #scouting quests and scouting AI added together. If we only add this then we limit AI very much, it can attack only very few of centers, this damages
         #variability of game and surprise attacks of AI. Player can predict where AI will attack and he can full garnisons of only this center.
-        #We can add asking travellers about how good defended center X by paying 100 denars for example to equalize situations of AI and human player.
+        #We can add asking travellers about how good defended center X by paying 100 lobaris for example to equalize situations of AI and human player.
         #But these needs much work and detailed AI tests so Armagan decided to skip this for now.
 
         #(store_sub, ":faction_recce_slot", ":faction_no", kingdoms_begin),

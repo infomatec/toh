@@ -248,8 +248,8 @@ strings = [
   ("cant_use_inventory_arena","Can't access inventory in the arena."),
   ("cant_use_inventory_disguised","Can't access inventory while you're disguised."),
   ("cant_use_inventory_tutorial","Can't access inventory in the training camp."),
-  ("1_denar", "1 denar"),
-  ("reg1_denars", "{reg1} denars"),
+  ("1_Lobari", "1 Lobari"),
+  ("reg1_Lobaris", "{reg1} Lobaris"),
   ("january_reg1_reg2", "January {reg1}, {reg2}"),
   ("february_reg1_reg2", "February {reg1}, {reg2}"),
   ("march_reg1_reg2", "March {reg1}, {reg2}"),
@@ -622,7 +622,7 @@ strings = [
  You end up a beggar in {s9}, living on alms and the charity of the church."),
   ("retirement_text_2", "Only too late do you realise that your money won't last.\
  It doesn't take you long to fritter away what little you bothered to save.\
- Once every denar has evaporated in your hands you are forced to start a life of crime in the backstreets of {s9},\
+ Once every Lobari has evaporated in your hands you are forced to start a life of crime in the backstreets of {s9},\
  using your skills to eke out a living robbing coppers from women and poor townsmen."),
   ("retirement_text_3", "Only too late do you realise that your money won't last.\
  It doesn't take you long to fritter away what little you bothered to save,\
@@ -746,7 +746,7 @@ strings = [
 #npc16 = klethi --> Antonius
   
   ("npc1_intro", "he mon bon seigneur, ne me laissez pas ici..."),
-  #("npc2_intro", "Hello. Would you be so kind as to have a cup with me? I'm down to my last five denars and I'd rather not drink alone."),
+  #("npc2_intro", "Hello. Would you be so kind as to have a cup with me? I'm down to my last five Lobaris and I'd rather not drink alone."),
     ("npc2_intro", "Thank you for freeing me from these bandits, {sir/madame},but it's too late I've lost everything!!"),
   ("npc3_intro", "Hello, {playername}, thank you for freeing me the other day."),
   ("npc4_intro", "Ha, whose this whelp?!"),
@@ -854,7 +854,7 @@ strings = [
 
 ### use these if there is a short period of time between the last meeting 
   ("npc1_backstory_later", "I've been here and about, you know, doing my best to keep out of trouble. I'm desperately in need of work, however."),
-  ("npc2_backstory_later", "I sold my boots and have managed to make a few denars peddling goods from town to town, but it's a hard living."),
+  ("npc2_backstory_later", "I sold my boots and have managed to make a few Lobaris peddling goods from town to town, but it's a hard living."),
   ("npc3_backstory_later", "I hired myself on as a cook for some passing caravans, and that at least keeps me fed. But it is rough company on the road, and I grow weary of fighting off guards and others who would try to take liberties. I was thinking that if I could find work as a warrior, men would know to leave me alone."),
   ("npc4_backstory_later", "I think I can guess! The fact you're daring to approach me, One Eyed Ymir, the scourge of the north, you are aiming to kill some people yes!? Eh?"),
   ("npc5_backstory_later", "I'd be glad to have a chance to have a new master, perhaps ride and butcher my enemies once again instead of hearing merchants whine and smelling horse and camel **** all day."),
@@ -978,31 +978,31 @@ strings = [
   ("npc1_payment", "I will be very useful to you, {sir/madame}, you can bet on that."),
   ("npc2_payment", "{!}."),
   ("npc3_payment", "{!}."),
-  ("npc4_payment", "400 gold to get us started then, and more spoils to come."),
+  ("npc4_payment", "{reg3} silver to get us started then, and more spoils to come."),
   ("npc5_payment", "Unfortunately my armour is rusty and battered from constant brigands, and these fickle merchants don't pay enough for me to constantly repair it. And while my lord didn't have surviving children, I have sired a few here and there, and I know for certain some of my older ones have even sired their own. If you can pay me {reg3} in coin so I can refurbish my armour and weapons and send to my former concubines and their children, I'd fight a little happier."),
   ("npc6_payment", "Excellent, glad we understand each other. Would 100 lobars be too much to ask though? I owe some money to some people and I'd like to pay them back now."),
   ("npc7_payment", "Excellent, it seems like were in business then. Pay me {reg3} coffers first and then I'll join your company. After all, I might be within the profession of killing idiots, but I'd be one myself if I didn't ask for some payment upfront."),
   ("npc8_payment", "Then let us be off, for we must root out sin and evil! Cast me one coin and I shall seal our bond by smashing the symbol of greed flat!"),
-  ("npc9_payment", "Though, my coffers are looking a bit slim. And for me, Olaf the Stout, that's a problem. If you could cover my expenses for paying off some debts, 800 crowns to be specific, given my betrothed's funeral expenses last month drained me, I'd appreciate it and would owe you big time friend. And I intend to pay that debt with my mighty arm."),
-  ("npc10_payment", "Excellent, then we have come to an agreement! However, as a knight of Kalisos, blessed be that great city, I also demand the proper payment a knight like me deserves! I request 1250 coffers to fill my purse to cover my expenses!"),
+  ("npc9_payment", "Though, my coffers are looking a bit slim. And for me, Olaf the Stout, that's a problem. If you could cover my expenses for paying off some debts, {reg3} crowns to be specific, given my betrothed's funeral expenses last month drained me, I'd appreciate it and would owe you big time friend. And I intend to pay that debt with my mighty arm."),
+  ("npc10_payment", "Excellent, then we have come to an agreement! However, as a knight of Kalisos, blessed be that great city, I also demand the proper payment a knight like me deserves! I request {reg3} coffers to fill my purse to cover my expenses!"),
   ("npc11_payment", "But eh... hehe, I uh... would like to pay back my friend you see for his horses! Would you mind lending me about 300 coffers?"),
   ("npc12_payment", "Excellent. Shall we seal our agreement with 600 coin then?"),
-  ("npc13_payment", "Thank you. I will require 400 Lobars for my initial services."),
-  ("npc14_payment", "250 Lobars for my services shall suffice."),
+  ("npc13_payment", "Thank you. I will require {reg3} Lobars for my initial services."),
+  ("npc14_payment", "{reg3} Lobaris for my services shall suffice."),
   ("npc15_payment", "{!}."),
-  ("npc16_payment", "I'll need some coffers before I suit up and march again. I have to have my shield and spear refurbished, and get some dents out of my armour. I'll need about  500 Lobars for the smith."),
+  ("npc16_payment", "I'll need some coffers before I suit up and march again. I have to have my shield and spear refurbished, and get some dents out of my armour. I'll need about {reg3} Lobaris for the smith."),
 
   ("npc1_payment_response", "Now, fall in with the rest."),
   ("npc2_payment_response", "{!}."),
   ("npc3_payment_response", "{!}."),
   ("npc4_payment_response", "Of course. Kill for me and there'll be more where that came from."),
-  ("npc5_payment_response", "Certainly, I can understand a warrior who wants to take care of his own blood and equipment. Its only natural. Here's {reg3} denars,"),
+  ("npc5_payment_response", "Certainly, I can understand a warrior who wants to take care of his own blood and equipment. Its only natural. Here's {reg3} Lobaris,"),
   ("npc6_payment_response", "Sure. Go pay your debts and make ready."),
   ("npc7_payment_response", "Wise, here's {reg3} coffers. You won't find a better company to fight for than mine, you made the right choice."),
   ("npc8_payment_response", "(Throws the coin over, and watches as Vultuire flattens it into the ground) Onwards then!"),
   ("npc9_payment_response", "Of course. My condolences for your loss, but we all need to move on, and for bastards like us that means a good proper fight."),
   ("npc10_payment_response", "Very well. You get what you pay for typically, so I expect great fighting from you Sir Ignatius."),
-  ("npc11_payment_response", "Yes yes... go pay off some people, shut some people up. I don't need your crimes biting me in the arse later."),
+  ("npc11_payment_response", "Yes yes... You can take my share of spoils, go pay off some people, shut some people up. I don't need your crimes biting me in the arse later."),
   ("npc12_payment_response", "Certainly. Get ready to move soldier, we'll be on our way."),
   ("npc13_payment_response", "Of course. Here you are."),
   ("npc14_payment_response", "Very well."),
@@ -1222,7 +1222,7 @@ strings = [
   ("npc16_home_description", "The snows in these valleys don't melt until late in the year, and the land is hard to plough. You can grow a bit of barley, but not much else. But there's wealth here in the woods: deer, rabbit and lynx, meat and furs, and the mountains have iron, and traders would ship enough saltfish up the river from the coast to keep the people fed for the winter."),
 
   ("npc1_home_description_2", "They go easy on us farming folk, and don't ask for much in tax -- not that we would be able to pay in any case. The land isn't good enough for most crops. Frankly, it's only good for horse-rearing, and that only for half of the year, in the winter after the rains. In the summer they take their herds back into the mountains. Caravans come over the hills and bring spice to Khosot, but we don't see much of that money down in the villages."),
-  ("npc2_home_description_2", "I had loaded up on saffron, cinnamon, cloves, pepper and other spices and a chest full of denars. I estimated that I could buy linens, furs, velvet, iron and wool, and the extra horses to carry them back, and I'd still make a profit. I just hadn't figured in the Guhulays, who apparently don't care for others cutting in on their monopoly."),
+  ("npc2_home_description_2", "I had loaded up on saffron, cinnamon, cloves, pepper and other spices and a chest full of Lobaris. I estimated that I could buy linens, furs, velvet, iron and wool, and the extra horses to carry them back, and I'd still make a profit. I just hadn't figured in the Guhulays, who apparently don't care for others cutting in on their monopoly."),
   ("npc3_home_description_2", "The poets call Taresterina a paradise, and I think for once that they do not exaggerate."),
   ("npc4_home_description_2", "How do I know this, you ask? Well... I was taken by them, and held for ransom, but I got away. That's really all there is to tell."),
   ("npc5_home_description_2", "Of course, you know how things go. My father's generation were hard warriors from the cold lands across the mountains, but this generation all has houses in the town and great estates and spend time as much trading as they do practicing archery. The next generation will grow soft on Taresterinan wine and will lose their lands to the next batch of illiterate hill-raiders to come over the mountains, just you watch. It's how things always were, and how things always will be."),
@@ -1230,8 +1230,8 @@ strings = [
   ("npc7_home_description_2", "We were allowed to fish the river, raise pigs amid the reedbeds, and grow whatever we could in our private plots, but in the open fields we were only permitted to grow flax, to be taken to Burfell and woven into linen. So we were always hungry, and weak, and never had the courage to rebel."),
   ("npc8_home_description_2", "The skalds' tales at least gave Gundig an excuse to raise a warband -- not that we Hadvogs ever need an excuse, mind. He sailed across the sea, rallied the Tohlobarian Hadvogs to his banner, and marched on the Rock of Yaddala. The Borovods killed him, and threw his banner into the surf. But the Hadvogs keep coming, and some day all of Tohlobaria will be ours."),
   ("npc9_home_description_2", "Just as the Hadvogs can call on their kinfolk overseas, so does the Borovod king call on his kinfolk from over the mountains. Had my father not disinherited me, I would also have taken an oath of fealty to the lord of Nidgornia. But just as I was shorn of my inheritance, so also was I shown of my obligations, and it is the Borovod king's loss."),
-  ("npc10_home_description_2", "We grow mulberry trees here for silk and kermes too for the dye. We take it to Bilomadal where they weave it into the finest velvet -- not that I have ever had enough denars in my pocket to buy velvet, mind. But the craftsmen of Bilomadal also make good crossbows, and for that I'll not begrudge them their little luxuries"),
-  ("npc11_home_description_2", "The Pravar king will tell you that Pravar was the biggest city in Tohlobaria back under the Empire, and that's why he should rule the whole land today. Mind you, I don't care much about politics, {sir/madame} -- I've sold provisions to every army that ever marched in Tohlobaria, and I tell you that I wouldn't give a single one of them a single biscuit unless I had the cold, hard denars in my hand first. Why these high and mighty kings and nobles can't pay their bills, I'll never know. But I prattle on a bit, there, don't I?"),
+  ("npc10_home_description_2", "We grow mulberry trees here for silk and kermes too for the dye. We take it to Bilomadal where they weave it into the finest velvet -- not that I have ever had enough Lobaris in my pocket to buy velvet, mind. But the craftsmen of Bilomadal also make good crossbows, and for that I'll not begrudge them their little luxuries"),
+  ("npc11_home_description_2", "The Pravar king will tell you that Pravar was the biggest city in Tohlobaria back under the Empire, and that's why he should rule the whole land today. Mind you, I don't care much about politics, {sir/madame} -- I've sold provisions to every army that ever marched in Tohlobaria, and I tell you that I wouldn't give a single one of them a single biscuit unless I had the cold, hard Lobaris in my hand first. Why these high and mighty kings and nobles can't pay their bills, I'll never know. But I prattle on a bit, there, don't I?"),
   ("npc12_home_description_2", "The difference between poison and cure is the dose. You tell that to everyone you meet, and tell them you heard it first from Jeremus the Great. People think that all the wisdom worth knowing was written in Old Tohlobarian, but I say you can learn twice as much from village midwives and careful examination of nature than from the entire imperial corpus. That's why they threw me out of the university, although in retrospect that was a blessing. Anyway, I put that lord back on his feet, and he availed me of a sack of gold and the corpse of a freshly hanged criminal to dissect. Ha! To think of the lengths I had to go to get specimens back in those days."),
   ("npc13_home_description_2", "Eventually I had to leave, and sometimes I wonder if there is a little herdsboy swaddled on her back, as she takes the cows up to pasture each morning. I'd be tempted to try to find her -- but no, no, one should never look back."),
   ("npc14_home_description_2", "If anyone were ever to unify this little land of ours, I'd sign up to serve them, free of charge. I'd put together an army of Imifir spears with Hadvog footmen on the flanks and Borovod archers in front, take along some Guhulay scouts to find and fix the enemy, and some Pravar lancers and Afirid Horsemen to finish them off. I'd take that army over the mountains and make the whole world kneel to Tohlobaria.... Of course, that's what the Emperors thought, and in the end the tribes took away their Empire."),
@@ -1291,7 +1291,7 @@ strings = [
 
   
   ("npc1_kingsupport_2", "Sure would, Boss. But let me tell you what might bring others to your cause -- particularly us poor folk. They tell us that in the old days, each new Emperor who took the throne would issue a great amnesty for all but the worst prisoners in his dungeons, give people a second chance to make something of themselves -- like you gave me a second chance, Boss."), #Borcha
-  ("npc2_kingsupport_2", "Most of the lords of this land -- well, let's just say that they never held a denar that they didn't collect as rent or take as pillage. You, on the other hand, have some experience of commerce and trade, of the effort and risk involved in making sure that men don't go hungry in Burfell while there's a glut of grain in Pravar, to give an example.... If you like, captain, I reckon I could find some support for you among the merchants and burghers of this realm."), #rijat
+  ("npc2_kingsupport_2", "Most of the lords of this land -- well, let's just say that they never held a Lobari that they didn't collect as rent or take as pillage. You, on the other hand, have some experience of commerce and trade, of the effort and risk involved in making sure that men don't go hungry in Burfell while there's a glut of grain in Pravar, to give an example.... If you like, captain, I reckon I could find some support for you among the merchants and burghers of this realm."), #rijat
   ("npc3_kingsupport_2", "I would, {my lord/my lady}. But I would strongly recommend that you reinstitute an old Tohlobarian imperial tradition -- the council of lords and commons, drawn from both the nobles of the land and well-educated men of property, with the power to overrule any new taxes or other tyrannical measures that might tempt you. It would be for your own good, {sir/my lady}."), #ymira
   ("npc4_kingsupport_2", "Of course, {captain/my lady}. The trick is now to get others to follow you. As you know, one's lineage is a great determinant of one's worthiness. Perhaps you have a long-lost ancestor of whom you have not told me?"), #rolf
   ("npc5_kingsupport_2", "Ay, Bahadur, I would. But there is something I should say, on behalf of the men of the steppes such as myself. It would bring great joy to us, to hear from the lips of one who would be khan, that you would restore an anicent right. From the days of the old emperors, the men of the steppes have enjoyed the right to bring their flocks to new pastures or to market, which necessarily involves the crossing of lands owned by the great lords of this realm."), #beheshtur
@@ -1342,7 +1342,7 @@ strings = [
   ("npc16_kingsupport_2b", "No offense, but I'm not sure that's the approach I'd take"), #klethi
   
   ("npc1_kingsupport_3", "If I could go about this land for a few weeks, telling the common folk that you were going to amnesty their kinfolk like the emperors of old -- well, they would start talking of you as the Emperor, and that would pave your way to the throne. Shall I do that, Boss?"), #Borcha
-  ("npc2_kingsupport_2", "If you like, captain, I can take a few weeks to visit the guildhalls and caravanseries where I have contacts, and explain to them that, in you, they will have a {king/ruler} who will check the rapacious nobles, who, with their tariffs and taxes, would strangle commerce for the sake of a few extra denars to spend on their wars and their feasts. What do you say to that, captain?"), #rijat
+  ("npc2_kingsupport_2", "If you like, captain, I can take a few weeks to visit the guildhalls and caravanseries where I have contacts, and explain to them that, in you, they will have a {king/ruler} who will check the rapacious nobles, who, with their tariffs and taxes, would strangle commerce for the sake of a few extra Lobaris to spend on their wars and their feasts. What do you say to that, captain?"), #rijat
   ("npc3_kingsupport_3", "If you were to make such a pledge, {sir/madame}, I think that it would help many of the lords of this land overcome any reluctance that they might have. If your aim is to restore the old Tohlobarian system, then arguably you are a more legitimate {king/ruler} then any of these come-lately usurpers. Give me leave for several weeks, {sir/madame}, and I will let it be known in the noble courts and merchant houses of this land that you intend to restore their ancient rights."), #ymira
   ("npc4_kingsupport_3", "Yes -- I think I have heard of that line, In fact, I can envision {his/her} entire genealogy. If you give me leave, 'Majesty', I shall travel about the villages and castles of this realm over the next several weeks, spreading word of your royal birth. Of course, I would hope that you would remember your faithful subject, when it comes to distributing lands..."),
   ("npc5_kingsupport_3", "Anyway, lord, in these sorry times the men of the great estates have taken to blocking our passage, charging us huge fees to cross. It is a great burden on my people, Bahadur. If I could take a few weeks to let the men of the steppes know that you would support the restoration of our ancient rights, well, then, I think you would find many who would support you as khan, And when men speak of you as khan, that's the first step to becoming one."), #beheshtur
@@ -1697,7 +1697,7 @@ strings = [
   ("comment_you_defeated_my_friend_enemy_spiteful",   "Your fame runs before you, {playername}. {s54} may have fallen for your tricks, but if you fight me, you'll find a me a much more slippery foe."), 
   ("comment_you_defeated_my_friend_enemy",            "They say that you have defeated {s54}. But I will be a truer test of your skill at arms."), 
 
-  ("comment_you_captured_a_lord_allied_friendly_spiteful",   "I heard that you captured {s54}. I hope that you squeezed him for every denar."), 
+  ("comment_you_captured_a_lord_allied_friendly_spiteful",   "I heard that you captured {s54}. I hope that you squeezed him for every Lobari."), 
   ("comment_you_captured_a_lord_allied_unfriendly_spiteful", "I heard that you captured {s54}. Your coffers must be well-bloated with ransom by now. Such a pity that money cannot transform a low-born cur into a gentleman!"), 
   ("comment_you_captured_a_lord_allied_chivalrous",          "I heard that you captured {s54}. Well done. I assume, of course, that he has been been treated with the honours due his rank."), 
   ("comment_you_captured_a_lord_allied",                     "I heard that you captured {s54}. Well done. His ransom must be worth quite something."), 
@@ -3194,7 +3194,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("s12s15_has_no_particular_reason_to_continue_the_war_with_s16_and_would_probably_make_peace_if_given_the_opportunity", "{s12}{s15} has no particular reason to continue the war with {s16}, and would probably make peace if given the opportunity."),
   ("s12s15_seems_to_be_willing_to_improve_relations_with_s16", "{s12}{s15} seems to be willing to improve relations with {s16}."),
   ("excuse_me_how_can_you_possibly_imagine_yourself_worthy_to_marry_into_our_family", "Excuse me? How can you possibly imagine yourself worthy to marry into our family?"),
-  ("em_with_regard_to_her_ladyship_we_were_looking_specifically_for_a_groom_of_some_distinction_fight_hard_count_your_dinars_and_perhaps_some_day_in_the_future_we_may_speak_of_such_things_my_good_man", "Em... With regard to her ladyship, we were looking specifically for a groom of some distinction. Fight hard, count your denars, and perhaps some day in the future we may speak of such things, my good man!"),
+  ("em_with_regard_to_her_ladyship_we_were_looking_specifically_for_a_groom_of_some_distinction_fight_hard_count_your_dinars_and_perhaps_some_day_in_the_future_we_may_speak_of_such_things_my_good_man", "Em... With regard to her ladyship, we were looking specifically for a groom of some distinction. Fight hard, count your Lobaris, and perhaps some day in the future we may speak of such things, my good man!"),
   ("em_with_regard_to_her_ladyship_we_were_looking_specifically_for_a_groom_of_some_distinction", "Em... With regard to her ladyship, we were looking specifically for a groom of some distinction."),
   ("it_is_too_early_for_you_to_be_speaking_of_such_things_you_are_still_making_your_mark_in_the_world", "It is too early for you to be speaking of such things. You are still making your mark in the world."),
   ("you_dont_serve_the_s4_so_id_say_no_one_day_we_may_be_at_war_and_i_prefer_not_to_have_to_kill_my_inlaws_if_at_all_possible", "You don't serve the {s4}, so I'd say no. One day we may be at war, and I prefer not to have to kill my in-laws, if at all possible."),
@@ -3377,7 +3377,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("s4_ready_to_voice_objection_to_s3s_mission_if_in_party", "{s4} ready to voice objection to {s3}'s mission, if in party"),
   ("test_effective_relation_=_reg3", "{!}DEBUG : Effective relation = {reg3}"),
   ("g_talk_troop_=_reg0__g_encountered_party_=_reg1__slot_value_=_reg2", "{!}g talk troop = {reg0} , g encountered party = {reg1} , slot value = {reg2}"),
-  ("strange_that_one_didnt_seem_like_your_ordenary_troublemaker_he_didnt_drink_all_that_much__he_just_stood_there_quietly_and_watched_the_door_you_may_wish_to_consider_whether_you_have_any_enemies_who_know_you_are_in_town_a_pity_that_blood_had_to_be_spilled_in_my_establishment", "Strange. That one didn't seem like your ordinary troublemaker. He didn't drink all that much -- he just stood there, quietly, and watched the door. You may wish to consider whether you have any enemies who know you are in town... A pity that blood had to be spilled in my establishment..."),
+  ("strange_that_one_didnt_seem_like_your_orLobariy_troublemaker_he_didnt_drink_all_that_much__he_just_stood_there_quietly_and_watched_the_door_you_may_wish_to_consider_whether_you_have_any_enemies_who_know_you_are_in_town_a_pity_that_blood_had_to_be_spilled_in_my_establishment", "Strange. That one didn't seem like your ordinary troublemaker. He didn't drink all that much -- he just stood there, quietly, and watched the door. You may wish to consider whether you have any enemies who know you are in town... A pity that blood had to be spilled in my establishment..."),
   ("wielded_item_reg3", "{!}Wielded item: {reg3}"),
   ("you_never_let_him_draw_his_weapon_still_it_looked_like_he_was_going_to_kill_you_take_his_sword_and_purse_i_suppose_he_was_trouble_but_its_not_good_for_an_establishment_to_get_a_name_as_a_place_where_men_are_killed", "You never let him draw his weapon.... Still, it looked like he was going to kill you. Take his sword and purse, I suppose. He was trouble, but it's not good for an establishment to get a name as a place where men are killed."),
   ("well_id_say_that_he_started_it_that_entitles_you_to_his_sword_and_purse_i_suppose_have_a_drink_on_the_house_as_i_daresay_youve_saved_a_patron_or_two_a_broken_skull_still_i_hope_he_still_has_a_pulse_its_not_good_for_an_establishment_to_get_a_name_as_a_place_where_men_are_killed", "Well... I'd say that he started it. That entitles you to his sword and purse, I suppose. Have a drink on the house, as I daresay you've saved a patron or two a broken skull. Still, I hope he still has a pulse. It's not good for an establishment to get a name as a place where men are killed."),
@@ -4071,7 +4071,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
   ("velvet_site", "dyeworks"),
 
   ("under_sequestration", "Under sequestration"),
-  ("describe_secondary_input", " In addition, you will also need to purchase {s11} worth {reg10} denars."),
+  ("describe_secondary_input", " In addition, you will also need to purchase {s11} worth {reg10} Lobaris."),
   ("profit", "profit"),
   ("loss", "loss"),
   
@@ -4105,9 +4105,9 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("the_phoenix", "Deliver prisoners from the Black Order guards, and return to speak with the artisan in the ruins!"),
 ("the_phoenix_2", "{!}Recruit 10 mercenaries from Captain Jalik in Free Port.\
 	After that return to the ruins and talk to Moktar."),
-("the_phoenix_3", "{!}Give 20000 denars to Moktar, to rebuild the Castle in ruins"),	
+("the_phoenix_3", "{!}Give 20000 Lobaris to Moktar, to rebuild the Castle in ruins"),	
 ("the_phoenix_4", "{!}Your castle will be ready in 40 days"),	
-("the_phoenix_5", "{!}Bring 25000 denars to Moktar, to improve your castle"),
+("the_phoenix_5", "{!}Bring 25000 Lobaris to Moktar, to improve your castle"),
 ("the_phoenix_6", "{!} Your fortifications will be ready in 40 days"),	
 ("master_armorer", "{!} Collect these materials for your blacksmith : \
 	5 Linen\

@@ -4041,7 +4041,7 @@ game_menus = [
           (try_end),
           (assign, "$talk_context", tc_ally_thanks),
           (try_begin),
-                (eq,":ally_faction","fac_desciplined"),
+                (eq,":ally_faction","fac_disciplined"),
                 (troop_slot_eq, "trp_npc8", slot_troop_met_previously, 0),
                 (assign,":ally_leader","trp_npc8"),
           (try_end),
@@ -6706,7 +6706,7 @@ game_menus = [
  'I was most pleased to hear of your valiant efforts in the capture of {s2}. Your victory has gladdened all our hearts.\
  You also requested me to give you ownership of the castle, but that is a favour which I fear I cannot grant,\
  as you already hold significant estates in my realm.\
- Instead I have sent you {reg6} denars to cover the expenses of your campaign, but {s2} I give to {s5}.'\
+ Instead I have sent you {reg6} lobaris to cover the expenses of your campaign, but {s2} I give to {s5}.'\
  ",
     "none",
     [(set_background_mesh, "mesh_pic_messenger"),
@@ -6743,7 +6743,7 @@ game_menus = [
  'I was most pleased to hear of your valiant efforts in the capture of {s2}. Your victory has gladdened all our hearts.\
  You also requested me to give ownership of the castle to your husband, but that is a favour which I fear I cannot grant,\
  as he already holds significant estates in my realm.\
- Instead I have sent you {reg6} denars to cover the expenses of your campaign, but {s2} I give to {s5}.'\
+ Instead I have sent you {reg6} lobaris to cover the expenses of your campaign, but {s2} I give to {s5}.'\
  ",
     "none",
     [(set_background_mesh, "mesh_pic_messenger"),
@@ -7674,7 +7674,7 @@ game_menus = [
      (party_get_slot, ":volunteer_amount", "$current_town", slot_center_volunteer_troop_amount),
      (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
      (store_troop_gold, ":gold", "trp_player"),
-     (store_div, ":gold_capacity", ":gold", 10),#10 denars per man
+     (store_div, ":gold_capacity", ":gold", 10),#10 lobaris per man
      (assign, ":party_capacity", ":free_capacity"),
      (val_min, ":party_capacity", ":gold_capacity"),
      (try_begin),
@@ -7691,7 +7691,7 @@ game_menus = [
        (eq, ":volunteer_amount", 0),
        (str_store_string, s18, "@No one here seems to be willing to join your party."),
      (else_try),
-       (store_mul, reg6, ":volunteer_amount", 10),#10 denars per man
+       (store_mul, reg6, ":volunteer_amount", 10),#10 lobaris per man
        (str_store_troop_name_by_count, s3, ":volunteer_troop", ":volunteer_amount"),
        (try_begin),
          (eq, reg5, 1),
@@ -7728,7 +7728,7 @@ game_menus = [
         (eq, reg7, 0),
         (gt, reg5, 0),
       ],
-      "Recruit them ({reg6} denars).",
+      "Recruit them ({reg6} lobaris).",
       [
         (call_script, "script_village_recruit_volunteers_recruit"),
 
@@ -7948,7 +7948,7 @@ game_menus = [
   (
     "center_improve",0,
     "{s19} As the party member with the highest engineer skill ({reg2}), {reg3?you reckon:{s3} reckons} that building the {s4} will cost you\
- {reg5} denars and will take {reg6} days.",
+ {reg5} lobaris and will take {reg6} days.",
     "none",
     [(call_script, "script_get_improvement_details", "$g_improvement_type"),
      (assign, ":improvement_cost", reg0),
@@ -8352,7 +8352,7 @@ game_menus = [
   (
     "village_loot_complete",mnf_disable_all_keys,
     "On your orders your troops sack the village, pillaging everything of any value,\
- and then put the buildings to the torch. From the coins and valuables that are found, you get your share of {reg1} denars.",
+ and then put the buildings to the torch. From the coins and valuables that are found, you get your share of {reg1} lobaris.",
     "none",
     [
         (get_achievement_stat, ":number_of_village_raids", ACHIEVEMENT_THE_BANDIT, 0),
@@ -8841,7 +8841,7 @@ game_menus = [
         ], "Door to the castle."),
 
       ("join_tournament", [(neg|is_currently_night),(party_slot_ge, "$current_town", slot_town_has_tournament, 1),]
-       ,"Join the tournament.(Cost 200 Denars to participate)",
+       ,"Join the tournament.(Cost 200 Lobaris to participate)",
        [
            (try_begin),
 				(store_troop_gold, ":golds", "trp_player"),
@@ -9861,7 +9861,7 @@ game_menus = [
           (party_get_num_companions, ":num_men", "p_main_party"),
           (store_div, reg1, ":num_men", 4),
           (val_add, reg1, 1),
-          (str_store_string, s1, "@ ({reg1} denars per night)"),
+          (str_store_string, s1, "@ ({reg1} lobaris per night)"),
           (store_troop_gold, ":gold", "trp_player"),
           (lt, ":gold", reg1),
           (assign, ":can_rest", 0),
@@ -10258,7 +10258,7 @@ game_menus = [
   (
     "town_tournament_won",mnf_disable_all_keys,
     "You have won the tournament of {s3}! You are filled with pride as the crowd cheers your name.\
- In addition to honour, fame and glory, you earn a prize of {reg9} denars. {s8}",
+ In addition to honour, fame and glory, you earn a prize of {reg9} lobaris. {s8}",
     "none",
     [
         (str_store_party_name, s3, "$current_town"),
@@ -10273,7 +10273,7 @@ game_menus = [
         (try_begin),
           (gt, "$g_tournament_bet_win_amount", 0),
           (assign, reg8, ":total_win"),
-          (str_store_string, s8, "@Moreover, you earn {reg8} denars from the clever bets you placed on yourself..."),
+          (str_store_string, s8, "@Moreover, you earn {reg8} lobaris from the clever bets you placed on yourself..."),
         (try_end),
 		(try_begin),
 			(this_or_next|neq, "$players_kingdom", "$g_encountered_party_faction"),
@@ -10490,7 +10490,7 @@ game_menus = [
 
   (
     "tournament_bet",0,
-    "The odds against you are {reg5} to {reg6}.{reg1? You have already bet {reg1} denars on yourself, and if you win, you will earn {reg2} denars.:} How much do you want to bet?",
+    "The odds against you are {reg5} to {reg6}.{reg1? You have already bet {reg1} lobaris on yourself, and if you win, you will earn {reg2} lobaris.:} How much do you want to bet?",
     "none",
     [
       (assign, reg1, "$g_tournament_bet_placed"),
@@ -10516,42 +10516,42 @@ game_menus = [
       (assign, reg6, ":min_dif_divisor"),
       ],
    [
-      ("bet_500_denars", [(store_troop_gold, ":gold", "trp_player"),
+      ("bet_500_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                           (ge, ":gold", 500)
                           ],
-       "500 denars.",
+       "500 lobaris.",
        [
          (assign, "$temp", 500),
          (jump_to_menu, "mnu_tournament_bet_confirm"),
         ]),
-      ("bet_300_denars", [(store_troop_gold, ":gold", "trp_player"),
+      ("bet_300_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                          (ge, ":gold", 300)
                          ],
-       "300 denars.",
+       "300 lobaris.",
        [
          (assign, "$temp", 300),
          (jump_to_menu, "mnu_tournament_bet_confirm"),
         ]),
-      ("bet_200_denars", [(store_troop_gold, ":gold", "trp_player"),
+      ("bet_200_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                          (ge, ":gold", 200)
                          ],
-       "200 denars.",
+       "200 lobaris.",
        [
          (assign, "$temp", 200),
          (jump_to_menu, "mnu_tournament_bet_confirm"),
         ]),
-      ("bet_100_denars", [(store_troop_gold, ":gold", "trp_player"),
+      ("bet_100_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                          (ge, ":gold", 100)
                          ],
-       "100 denars.",
+       "100 lobaris.",
        [
          (assign, "$temp", 100),
          (jump_to_menu, "mnu_tournament_bet_confirm"),
         ]),
-      ("bet_50_denars", [(store_troop_gold, ":gold", "trp_player"),
+      ("bet_50_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                         (ge, ":gold", 50)
                         ],
-       "50 denars.",
+       "50 lobaris.",
        [
          (assign, "$temp", 50),
          (jump_to_menu, "mnu_tournament_bet_confirm"),
@@ -10562,42 +10562,42 @@ game_menus = [
         ]),
     ]
     # [
-      # ("bet_100_denars", [(store_troop_gold, ":gold", "trp_player"),
+      # ("bet_100_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                           # (ge, ":gold", 100)
                           # ],
-       # "100 denars.",
+       # "100 lobaris.",
        # [
          # (assign, "$temp", 100),
          # (jump_to_menu, "mnu_tournament_bet_confirm"),
         # ]),
-      # ("bet_50_denars", [(store_troop_gold, ":gold", "trp_player"),
+      # ("bet_50_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                          # (ge, ":gold", 50)
                          # ],
-       # "50 denars.",
+       # "50 lobaris.",
        # [
          # (assign, "$temp", 50),
          # (jump_to_menu, "mnu_tournament_bet_confirm"),
         # ]),
-      # ("bet_20_denars", [(store_troop_gold, ":gold", "trp_player"),
+      # ("bet_20_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                          # (ge, ":gold", 20)
                          # ],
-       # "20 denars.",
+       # "20 lobaris.",
        # [
          # (assign, "$temp", 20),
          # (jump_to_menu, "mnu_tournament_bet_confirm"),
         # ]),
-      # ("bet_10_denars", [(store_troop_gold, ":gold", "trp_player"),
+      # ("bet_10_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                          # (ge, ":gold", 10)
                          # ],
-       # "10 denars.",
+       # "10 lobaris.",
        # [
          # (assign, "$temp", 10),
          # (jump_to_menu, "mnu_tournament_bet_confirm"),
         # ]),
-      # ("bet_5_denars", [(store_troop_gold, ":gold", "trp_player"),
+      # ("bet_5_lobaris", [(store_troop_gold, ":gold", "trp_player"),
                         # (ge, ":gold", 5)
                         # ],
-       # "5 denars.",
+       # "5 lobaris.",
        # [
          # (assign, "$temp", 5),
          # (jump_to_menu, "mnu_tournament_bet_confirm"),
@@ -10611,7 +10611,7 @@ game_menus = [
 
   (
     "tournament_bet_confirm",0,
-    "If you bet {reg1} denars, you will earn {reg2} denars if you win the tournament. Is that all right?",
+    "If you bet {reg1} lobaris, you will earn {reg2} lobaris if you win the tournament. Is that all right?",
     "none",
     [
       (call_script, "script_get_win_amount_for_tournament_bet"),
@@ -10747,7 +10747,7 @@ game_menus = [
 
   (
     "collect_taxes_complete",mnf_disable_all_keys,
-    "You've collected {reg3} denars in taxes from {s3}. {s19} will be expecting you to take the money to him.",
+    "You've collected {reg3} lobaris in taxes from {s3}. {s19} will be expecting you to take the money to him.",
     "none",
     [(str_store_party_name, s3, "$current_town"),
      (quest_get_slot, ":quest_giver", "qst_collect_taxes", slot_quest_giver_troop),
@@ -10782,7 +10782,7 @@ game_menus = [
 
   (
     "collect_taxes_failed",mnf_disable_all_keys,
-    "You could collect only {reg3} denars as tax from {s3} before the revolt broke out.\
+    "You could collect only {reg3} lobaris as tax from {s3} before the revolt broke out.\
  {s1} won't be happy, but some silver will placate him better than nothing at all...",
     "none",
     [(str_store_party_name, s3, "$current_town"),
@@ -11134,7 +11134,7 @@ game_menus = [
 
   (
     "center_reports",0,
-    "Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days",
+    "Town Name: {s1}^Rent Income: {reg1} lobaris^Tariff Income: {reg2} lobaris^Food Stock: for {reg3} days",
     "none",
     [(party_get_slot, ":town_food_store", "$g_encountered_party", slot_party_food_store),
      (call_script, "script_center_get_food_consumption", "$g_encountered_party"),
@@ -11615,35 +11615,35 @@ game_menus = [
          (assign, reg6, ":best_result_5_profit"),
          (str_store_item_name, s4, ":best_result_5_item"),
          (str_store_party_name, s5, ":best_result_5_town"),
-         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} denars per item.{s3}"),
+         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} lobaris per item.{s3}"),
        (try_end),
        (try_begin),
          (ge, ":best_result_4_item", 0),
          (assign, reg6, ":best_result_4_profit"),
          (str_store_item_name, s4, ":best_result_4_item"),
          (str_store_party_name, s5, ":best_result_4_town"),
-         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} denars per item.{s3}"),
+         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} lobaris per item.{s3}"),
        (try_end),
        (try_begin),
          (ge, ":best_result_3_item", 0),
          (assign, reg6, ":best_result_3_profit"),
          (str_store_item_name, s4, ":best_result_3_item"),
          (str_store_party_name, s5, ":best_result_3_town"),
-         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} denars per item.{s3}"),
+         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} lobaris per item.{s3}"),
        (try_end),
        (try_begin),
          (ge, ":best_result_2_item", 0),
          (assign, reg6, ":best_result_2_profit"),
          (str_store_item_name, s4, ":best_result_2_item"),
          (str_store_party_name, s5, ":best_result_2_town"),
-         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} denars per item.{s3}"),
+         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} lobaris per item.{s3}"),
        (try_end),
        (try_begin),
          (ge, ":best_result_1_item", 0),
          (assign, reg6, ":best_result_1_profit"),
          (str_store_item_name, s4, ":best_result_1_item"),
          (str_store_party_name, s5, ":best_result_1_town"),
-         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} denars per item.{s3}"),
+         (str_store_string, s3, "@^Buying {s4} here and selling it at {s5} would bring a profit of {reg6} lobaris per item.{s3}"),
        (try_end),
        (str_store_string, s2, "@{reg3?You find:{s1} finds} out the following:^{s3}"),
      (try_end),
@@ -11812,7 +11812,7 @@ game_menus = [
 
   (
     "enemy_offer_ransom_for_prisoner",0,
-    "{s2} offers you a sum of {reg12} denars in silver if you are willing to sell him {s1}.",
+    "{s2} offers you a sum of {reg12} lobaris in silver if you are willing to sell him {s1}.",
     "none",
     [(call_script, "script_calculate_ransom_amount_for_troop", "$g_ransom_offer_troop"),
      (assign, reg12, reg0),
@@ -12683,7 +12683,7 @@ game_menus = [
     "captivity_end_propose_ransom",0,
     "You spend long hours in the sunless dank of the dungeon, more than you can count.\
  Suddenly one of your captors enters your cell with an offer;\
- he proposes to free you in return for {reg5} denars of your hidden wealth. You decide to...",
+ he proposes to free you in return for {reg5} lobaris of your hidden wealth. You decide to...",
     "none",
     [
       (assign, reg5, "$player_ransom_amount"),
@@ -14900,7 +14900,7 @@ game_menus = [
   ),
 
   ("notification_relieved_as_marshal", mnf_disable_all_keys,
-    "{s4} wishes to inform you that your services as marshal are no longer required. In honor of valiant efforts on behalf of the realm over the last {reg4} days, however, {reg8?she:he} offers you a purse of {reg5} denars.",
+    "{s4} wishes to inform you that your services as marshal are no longer required. In honor of valiant efforts on behalf of the realm over the last {reg4} days, however, {reg8?she:he} offers you a purse of {reg5} lobaris.",
     "none",
     [
 	(assign, reg4, "$g_player_days_as_marshal"),
@@ -14909,14 +14909,14 @@ game_menus = [
 
 	(store_div, ":renown_gain", "$g_player_days_as_marshal",4),
 	(val_min, ":renown_gain", 20),
-	(store_mul, ":denar_gain", "$g_player_days_as_marshal", 50),
-	(val_max, ":denar_gain", 200),
-	(val_min, ":denar_gain", 4000),
-	(troop_add_gold, "trp_player", ":denar_gain"),
+	(store_mul, ":lobari_gain", "$g_player_days_as_marshal", 50),
+	(val_max, ":lobari_gain", 200),
+	(val_min, ":lobari_gain", 4000),
+	(troop_add_gold, "trp_player", ":lobari_gain"),
 	(call_script, "script_change_troop_renown", "trp_player", ":renown_gain"),
 	(assign, "$g_player_days_as_marshal", 0),
 	(assign, "$g_dont_give_marshalship_to_player_days", 15),
-	(assign, reg5, ":denar_gain"),
+	(assign, reg5, ":lobari_gain"),
 
 	(faction_get_slot, ":faction_leader", "$players_kingdom", slot_faction_leader),
 	(str_store_troop_name, s4, ":faction_leader"),
@@ -15040,7 +15040,7 @@ game_menus = [
         (eq, reg7, 0),
         (gt, reg5, 0),
       ],
-      "Recruit them ({reg6} denars).",
+      "Recruit them ({reg6} lobaris).",
       [
         (call_script, "script_castle_recruit"),
 
@@ -15136,7 +15136,7 @@ game_menus = [
         (eq, reg7, 0),
         (gt, reg5, 0),
       ],
-      "Recruit them ({reg6} denars).",
+      "Recruit them ({reg6} lobaris).",
       [
         (call_script, "script_town_recruit"),
 
@@ -15182,7 +15182,7 @@ game_menus = [
 
      #(party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
      (store_troop_gold, ":gold", "trp_player"),
-     (store_div, ":gold_capacity", ":gold", 50),#50 denars per man
+     (store_div, ":gold_capacity", ":gold", 50),#50 lobaris per man
      #(assign, ":party_capacity", ":free_capacity"),
      # (val_min, ":party_capacity", ":gold_capacity"),
      # (try_begin),
@@ -15199,10 +15199,10 @@ game_menus = [
        (eq, ":volunteer_amount", 0),
        (str_store_string, s18, "@No one here seems to be willing to join your party."),
      (else_try),
-	   (store_mul, reg6, ":volunteer_amount", 50),#50 denars per man
+	   (store_mul, reg6, ":volunteer_amount", 50),#50 lobaris per man
 	   	#---------cavalryman-----
-		(store_div, ":gold_capacity", ":gold", 250),#250 denars per man mounted
-		(store_mul, reg8, ":volunteer_amount", 250),#250 denars per man mounted
+		(store_div, ":gold_capacity", ":gold", 250),#250 lobaris per man mounted
+		(store_mul, reg8, ":volunteer_amount", 250),#250 lobaris per man mounted
 		(try_begin),
 			(gt, ":volunteer_amount", ":gold_capacity"),
 			(assign, reg8, 0), #not enough money for cavalry
@@ -15246,7 +15246,7 @@ game_menus = [
         (gt, reg5, 0),
 
       ],
-      "Equip {reg5} : Pikeman ({reg6} denars).",
+      "Equip {reg5} : Pikeman ({reg6} lobaris).",
       [
         (call_script, "script_speciality_troops_recruit","trp_novice_pikeman",reg5),
 
@@ -15258,7 +15258,7 @@ game_menus = [
         (eq, reg7, 0),
         (gt, reg5, 0),
       ],
-      "Equip {reg5} : Crossbowman ({reg6} denars).",
+      "Equip {reg5} : Crossbowman ({reg6} lobaris).",
       [
         (call_script, "script_speciality_troops_recruit","trp_novice_crossbowman",reg5),
 
@@ -15270,7 +15270,7 @@ game_menus = [
         # (gt, reg8, 0),
         # (gt, reg5, 0),
       # ],
-      # "Equip {reg5} : Cavalryman ({reg8} denars).",
+      # "Equip {reg5} : Cavalryman ({reg8} lobaris).",
       # [
         # (call_script, "script_speciality_troops_recruit","trp_novice_cavalryman",reg5),
 
