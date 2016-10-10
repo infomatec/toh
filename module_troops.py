@@ -405,7 +405,7 @@ troops = [
 	 itm_rouncy,itm_saddle_horse],
    def_attrib|level(28),wp_one_handed (150) | wp_two_handed (50) | wp_polearm (150) ,knows_common|knows_riding_3| knows_ironflesh_5,pravar_face_middle_1, pravar_face_old_1],
 
-   ["sellsword","Lobarian Mercenary","Lobarian Mercenaries",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield,0,0,fac_kingdom_1,
+   ["sellsword","Lobarian Mercenary","Lobarian Mercenaries",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield,0,0,fac_commoners,
    [itm_afirid_medium_spear,itm_italian_warhammer,itm_common_sword_a,itm_common_sword_b,itm_common_sword_c,itm_common_sword_d,itm_common_sword_e,itm_lobarian_falchion,itm_sword_medieval_c,itm_tab_shield_heater_c,
    itm_breastplate_over_gambeson,itm_common_breastplate,itm_common_breastplate_orange,itm_common_breastplate_blue,itm_common_breastplate_red,itm_short_coat_of_plates_c,itm_brigandine_grey_mail,itm_brigandine_grey,itm_merc_padded_armor,itm_brigandine_blue,
    itm_lobarian_helmet_4,itm_open_sallet,itm_tares_helmet_0,itm_tares_helmet_1,itm_tares_helmet_2,itm_leather_boots,
@@ -434,7 +434,7 @@ troops = [
      itm_nomad_cap,itm_nomad_cap_b,itm_steppe_horse_1,itm_steppe_horse, itm_guhulay_cav_boots],
    def_attrib|level(25),wp_one_handed (150) | wp_two_handed (0) | wp_polearm (130) | wp_archery (100),knows_common|knows_riding_5| knows_ironflesh_5|knows_power_draw_3|knows_horse_archery_5,guhulay_face_middle_2, guhulay_face_old_2],
 
-   ["double_sold","Double Solde","Double Solde",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_1,
+   ["double_sold","Double Solde","Double Solde",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_commoners,
    [itm_lobarian_polehammer_1,itm_italian_warhammer,itm_great_bardiche,itm_sword_two_handed_a,itm_tab_shield_heater_c,itm_claymore,
    itm_nord_cuirass_over_mail,itm_nord_heavy_cuirass_over_mail,itm_short_coat_of_plates_a,itm_common_cuirass_orange,itm_darenbay_armor,itm_darenbay_armor_1,
    itm_visored_sallet_coif,itm_lobarian_bascinet_visor,itm_lobarian_bascinet_visor_open,
@@ -481,7 +481,7 @@ troops = [
 	 itm_hunter,itm_destrier,itm_rouncy,itm_saddle_horse],
    def_attrib|level(28),wp_one_handed (160) | wp_two_handed (70) | wp_polearm (170) ,knows_common|knows_riding_4| knows_ironflesh_5,pravar_face_middle_1, pravar_face_old_1],
 
-   ["heavy_sellsword","Lobarian Heavy Mercenary","Lobarian Heavy Mercenaries",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield,0,0,fac_kingdom_1,
+   ["heavy_sellsword","Lobarian Heavy Mercenary","Lobarian Heavy Mercenaries",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_guarantee_shield,0,0,fac_commoners,
    [itm_lobarian_polehammer_1,itm_italian_warhammer,itm_common_sword_a,itm_common_sword_b,itm_common_sword_c,itm_common_sword_d,itm_common_sword_e,itm_lobarian_falchion,itm_sword_medieval_c,itm_tab_shield_heater_c,
    itm_common_cuirass,itm_common_cuirass_orange,itm_common_cuirass_green,itm_common_cuirass_red,itm_common_cuirass_blue,itm_common_cuirass_brown,itm_breastplate_over_gambeson,itm_common_breastplate,itm_common_breastplate_orange,itm_common_breastplate_blue,itm_common_breastplate_red,itm_short_coat_of_plates_a,itm_short_coat_of_plates_b,itm_short_coat_of_plates_c,itm_brigandine_grey_mail,itm_brigandine_grey,itm_merc_padded_armor,itm_brigandine_leg,itm_brigandine_blue,itm_brigandine_blue_mail,
    itm_lobarian_helmet_4,itm_open_sallet,itm_tares_helmet_0,itm_tares_helmet_1,itm_tares_helmet_2,itm_shynbaulds,

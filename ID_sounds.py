@@ -180,7 +180,7 @@ snd_team_scored_a_point = 178
 snd_enemy_scored_a_point = 179
 snd_tutorial_fail = 180
 snd_glory_to_the_empire = 181
-snd_dirim_cry = 182
+snd_dirim_cries = 182
 snd_pravar_cry = 183
 snd_hadvog_cry = 184
 snd_galnar_swing = 185
@@ -190,5 +190,8 @@ snd_borovod_cry = 188
 snd_borovod_hurrah = 189
 snd_imifir_cry = 190
 snd_imifir_tercio = 191
+snd_kill_the_infidels = 192
+snd_afirid_alala = 193
+snd_forward = 194
 
 

@@ -2021,7 +2021,7 @@ common_battle_check_friendly_kills = (
     ])
 
 common_battle_check_victory_condition = (
-  1, 60, ti_once,
+  1, 20, ti_once,
   [
     (store_mission_timer_a,reg(1)),
     (ge,reg(1),10),
@@ -3895,12 +3895,17 @@ mission_templates = [
               ], []), #calculating and applying effect of people on others courage scores
 
       (3, 0, 0, [
+          
+            (this_or_next|eq,"$g_battle_won",1),
+            (eq, "$pin_player_fallen", 1),
+            (store_mission_timer_a,":mission_time"),
           (try_for_agents, ":agent_no"),
             (agent_is_human, ":agent_no"),
             (agent_is_alive, ":agent_no"),          
             (store_mission_timer_a,":mission_time"),
             (ge,":mission_time",3),          
             (call_script, "script_decide_run_away_or_not", ":agent_no", ":mission_time"),
+            (call_script, "script_cf_agent_shout", ":agent_no" ),#--toh(0.6)
           (try_end),          
               ], []), #controlling courage score and if needed deciding to run away for each agent
 

@@ -27328,6 +27328,56 @@ scripts = [
       (try_end),
       ]), #ozan
 
+
+    #--toh(0.6)
+  # script_cf_agent_shout
+  # Input: none
+  # Output: none
+  ("cf_agent_shout",
+    [
+        (store_script_param, ":cur_agent", 1),
+        (get_player_agent_no, ":player_agent"),
+        (neg|eq,":cur_agent",":player_agent"),
+        (assign,":track",-1),
+        (agent_get_slot, ":is_cur_agent_running_away", ":cur_agent", slot_agent_is_running_away),
+        (agent_get_troop_id,":troop_of_agent",  ":cur_agent"),
+        (store_troop_faction,":faction_of_agent",":troop_of_agent"),     
+        (try_begin),#victory or defeat
+            (this_or_next|eq,"$g_battle_won",1),
+            (eq, "$pin_player_fallen", 1),
+            (try_begin),#victory shouts for every faction
+                (eq,":faction_of_agent","fac_kingdom_1"),
+                (assign, ":track", "snd_pravar_cry"),
+            (else_try),
+                (eq,":faction_of_agent","fac_kingdom_7"),
+                (assign, ":track", "snd_dirim_cries"),
+            (else_try),
+                (eq,":faction_of_agent","fac_sons_of_mekhresh"),
+                (assign, ":track", "snd_afirid_alala"),
+            (try_end),
+            (store_random_in_range,":random",95,100),#greater chance to trigger agent's shout
+            (set_cheer_at_no_enemy, 1),
+        (else_try),#during battle
+            (store_random_in_range,":random",0,100),#lesser chance to trigger agent's shout
+            (eq, ":is_cur_agent_running_away", 0),
+            (try_begin),#battle cries for every faction
+                (eq,":faction_of_agent","fac_kingdom_1"),
+                (assign, ":track", "snd_pravar_cry"),
+            (else_try),
+                (eq,":faction_of_agent","fac_kingdom_7"),
+                (assign, ":track", "snd_dirim_cries"),
+            (else_try),
+                (eq,":faction_of_agent","fac_sons_of_mekhresh"),
+                (assign, ":track", "snd_kill_the_infidels"),
+            (try_end),
+        (else_try),
+                (assign, ":track", "snd_man_breath_hard"),
+        (try_end),
+        (gt,":track",0),
+        (gt,":random",98),
+        (agent_play_sound, ":cur_agent",":track"),    
+    ]),
+
   # script_decide_run_away_or_not
   # Input: none
   # Output: none
@@ -27610,9 +27660,9 @@ scripts = [
 					(team_give_order, ":team_no", grc_infantry , mordr_advance),
 					(team_give_order, ":team_no", grc_archers , mordr_advance),
 					#--Comrade Crimson
-					(agent_play_sound,":ai_leader","snd_pravar_cry"),
 					(store_random_in_range, ":warcries", 0, 3),
 					(lt,":warcries",1),
+					(agent_play_sound,":ai_leader","snd_pravar_cry"),
 					(try_for_agents,":agent"),
 						(agent_is_alive,":agent"),
 						(agent_is_human,":agent"),
@@ -27642,10 +27692,10 @@ scripts = [
 					(agent_play_sound,":ai_leader","snd_pravar_cry"),
 				(try_end),
 
-			#----dirim battle tactics (follow)-----------
+			#----dirim battle tactics -----------
 			(else_try),
 				(eq, ":team_faction", "fac_kingdom_7"),
-				(try_begin),
+				(try_begin),#--charge
 					(this_or_next|lt, ":min_dist", 1500),
 					(lt, ":avg_dist", 3000),
 					(agent_set_speed_limit, ":ai_leader", 60),
@@ -27654,8 +27704,8 @@ scripts = [
 					#--Comrade Crimson
 					(agent_play_sound,":ai_leader","snd_glory_to_the_empire"),
 					(try_for_agents,":agent"),
-						(store_random_in_range, ":warcries", 0, 5),
-						(lt,":warcries",1),
+						#(store_random_in_range, ":warcries", 0, 5),
+						#(lt,":warcries",1),
 						(agent_is_alive,":agent"),
 						(agent_is_human,":agent"),
 						#--only own team
@@ -27672,18 +27722,18 @@ scripts = [
 						(eq,":c",1),
 						#--
 						(neg|eq,":agent",":player_agent"),
-						(agent_play_sound,":agent","snd_glory_to_the_empire"),
+						(agent_play_sound,":agent","snd_dirim_cries"),
 					(try_end),
 					#--
-				(else_try),
+				(else_try),#advance
 					(this_or_next|lt, ":min_dist", 5000),
 					(lt, ":avg_dist", 2500),
 					(team_give_order, ":team_no", grc_infantry , mordr_advance),
 					(team_give_order, ":team_no", grc_archers , mordr_advance),
 					#--Comrade Crimson
-					(agent_play_sound,":ai_leader","snd_dirim_cry"),
 					(store_random_in_range, ":warcries", 0, 3),
 					(lt,":warcries",1),
+					(agent_play_sound,":ai_leader","snd_dirim_cries"),
 					(try_for_agents,":agent"),
 						(agent_is_alive,":agent"),
 						(agent_is_human,":agent"),
@@ -27701,7 +27751,7 @@ scripts = [
 						(eq,":c",1),
 						#--
 						(neg|eq,":agent",":player_agent"),
-						(agent_play_sound,":agent","snd_dirim_cry"),
+						(agent_play_sound,":agent","snd_dirim_cries"),
 					(try_end),
 					#--
 				(else_try),
@@ -27710,7 +27760,7 @@ scripts = [
 					(team_give_order, ":team_no", grc_everyone , mordr_advance),
 					(store_random_in_range, ":warcries", 0, 3),
 					(lt,":warcries",1),
-					(agent_play_sound,":ai_leader","snd_dirim_cry"),
+					(agent_play_sound,":ai_leader","snd_dirim_cries"),
 				(try_end),
 			#----borovod battle tactics-----------
 			(else_try),

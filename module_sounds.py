@@ -210,8 +210,8 @@ sounds = [
  ("tutorial_fail", sf_2d|sf_vol_7,["cue_failure.ogg"]),
  #--Comrade Crimson
 ("glory_to_the_empire",sf_priority_8|sf_vol_10, ["glory_to_the_empire.mp3"]),
-("dirim_cry",sf_priority_8|sf_vol_10, ["dirim_2.mp3","dirim_3.mp3","dirim_4.mp3"]),
-("pravar_cry",sf_priority_8|sf_vol_10, ["pravar_cry1.mp3","pravar_cry2.mp3","pravar_cry3.mp3","pravar_cry4.mp3","pravar_cry5.mp3","pravar_cry6.mp3"]),
+("dirim_cries",sf_priority_8|sf_vol_10, ["dirim_2.mp3","dirim_3.mp3","dirim_4.mp3"]),
+("pravar_cry",sf_priority_8|sf_vol_10, ["pravar_cry1.mp3","pravar_cry2.mp3","pravar_cry4.mp3","pravar_cry5.mp3","pravar_cry6.mp3"]),
 ("hadvog_cry",sf_priority_8|sf_vol_10, ["hadvog_cry1.mp3","hadvog_cry2.mp3","hadvog_cry3.mp3","hadvog_cry4.mp3","hadvog_cry5.mp3"]),
 ("galnar_swing",sf_priority_2|sf_vol_10, ["galnar_swing1.mp3","galnar_swing2.mp3","galnar_swing3.mp3","galnar_swing4.mp3"]),
 
@@ -222,10 +222,7 @@ sounds = [
 ("borovod_hurrah",sf_priority_2|sf_vol_10, ["hurrah1.mp3","hurrah2.mp3","hurrah3.mp3"]),
 ("imifir_cry",sf_priority_2|sf_vol_10, ["imifir_1.mp3","imifir_2.mp3","imifir_3.mp3","imifir_4.mp3","imifir_5.mp3","imifir_6.mp3","imifir_7.mp3"]),
 ("imifir_tercio",sf_priority_2|sf_vol_10, ["imifir_tercio.mp3"]),
-
-
-#-- 
- 
- 
- 
+("kill_the_infidels",sf_priority_2|sf_vol_10, ["kill_infidels_a.mp3","kill_infidels_b.mp3"]),
+("afirid_alala",sf_priority_2|sf_vol_10, ["afirid_alala_a.mp3","afirid_alala_b.mp3"]),
+("forward",sf_priority_2|sf_vol_10, ["forward.mp3"]),
 ]
