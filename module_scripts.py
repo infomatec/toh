@@ -27331,7 +27331,7 @@ scripts = [
 
     #--toh(0.6)
   # script_cf_agent_shout
-  # Input: none
+  # Input: agent id
   # Output: none
   ("cf_agent_shout",
     [
@@ -27349,6 +27349,15 @@ scripts = [
                 (eq,":faction_of_agent","fac_kingdom_1"),
                 (assign, ":track", "snd_pravar_cry"),
             (else_try),
+                (eq,":faction_of_agent","fac_kingdom_2"),
+                (assign, ":track", "snd_borovod_cheering"),
+            (else_try),
+                (eq,":faction_of_agent","fac_kingdom_4"),
+                (assign, ":track", "snd_hadvog_cry"),
+            (else_try),
+                (eq,":faction_of_agent","fac_kingdom_6"),
+                (assign, ":track", "snd_afirid_cries"),
+            (else_try),
                 (eq,":faction_of_agent","fac_kingdom_7"),
                 (assign, ":track", "snd_dirim_cries"),
             (else_try),
@@ -27356,13 +27365,21 @@ scripts = [
                 (assign, ":track", "snd_afirid_alala"),
             (try_end),
             (store_random_in_range,":random",95,100),#greater chance to trigger agent's shout
-            (set_cheer_at_no_enemy, 1),
         (else_try),#during battle
             (store_random_in_range,":random",0,100),#lesser chance to trigger agent's shout
             (eq, ":is_cur_agent_running_away", 0),
             (try_begin),#battle cries for every faction
                 (eq,":faction_of_agent","fac_kingdom_1"),
                 (assign, ":track", "snd_pravar_cry"),
+            (else_try),
+                (eq,":faction_of_agent","fac_kingdom_2"),
+                (assign, ":track", "snd_borovod_cry"),
+            (else_try),
+                (eq,":faction_of_agent","fac_kingdom_4"),
+                (assign, ":track", "snd_hadvog_cry"),
+            (else_try),
+                (eq,":faction_of_agent","fac_kingdom_6"),
+                (assign, ":track", "snd_afirid_cries"),
             (else_try),
                 (eq,":faction_of_agent","fac_kingdom_7"),
                 (assign, ":track", "snd_dirim_cries"),
@@ -27525,7 +27542,6 @@ scripts = [
 				(assign, ":battle_tactic", 0),
 				#--Comrade Crimson
 				(agent_play_sound,":ai_leader","snd_charge_borovod"),
-				#(display_message,"@CHARGE TOVARICH!",red),
 				(try_for_agents,":agent"),
 					# (store_random_in_range, ":warcries", 0, 5),
 					# (lt,":warcries",1),
@@ -27546,7 +27562,6 @@ scripts = [
 					#--
 					(neg|eq,":agent",":player_agent"),
 					(agent_play_sound,":agent","snd_borovod_hurrah"),
-					#(display_message,"@HURRAH!",green),
 				(try_end),
 				#--
 			(try_end),
@@ -27809,7 +27824,7 @@ scripts = [
 						(eq,":c",1),
 						#--
 						(neg|eq,":agent",":player_agent"),
-						(agent_play_sound,":agent","snd_borovod_cry"),
+						(agent_play_sound,":agent","snd_man_cheering"),
 					(try_end),
 					#--
 				(else_try),
@@ -27845,7 +27860,6 @@ scripts = [
 						(eq,":c",1),
 						#--
 						(neg|eq,":agent",":player_agent"),
-						(agent_play_sound,":agent","snd_man_cheering"),
 					(try_end),
 					#--
 				(else_try),
@@ -40289,6 +40303,7 @@ scripts = [
     (try_begin),
       (this_or_next|eq, ":situation", mtf_sit_fight),
       (eq, ":situation", mtf_sit_ambushed),
+      (display_message,"@debut du combat"),
       (assign, ":track", 0),
       (store_faction_of_party, ":faction", "$g_encountered_party"), #could be enemy or ally
       (try_begin),
@@ -40394,6 +40409,7 @@ scripts = [
             (assign,"$cur_track",":track"),
         (try_end),
         (play_track, "$cur_track", 0),
+      (display_message,"@debut de la musique"),
         # (try_begin),
             # (eq,"$cur_track",":track"),
             # (play_track, "track_toh_ambient_battle", 0),

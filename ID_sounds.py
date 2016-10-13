@@ -185,13 +185,16 @@ snd_pravar_cry = 183
 snd_hadvog_cry = 184
 snd_galnar_swing = 185
 snd_man_cheering = 186
-snd_charge_borovod = 187
-snd_borovod_cry = 188
-snd_borovod_hurrah = 189
-snd_imifir_cry = 190
-snd_imifir_tercio = 191
-snd_kill_the_infidels = 192
-snd_afirid_alala = 193
-snd_forward = 194
+snd_hadvog_huuh = 187
+snd_charge_borovod = 188
+snd_borovod_cry = 189
+snd_borovod_hurrah = 190
+snd_borovod_cheering = 191
+snd_imifir_cry = 192
+snd_imifir_tercio = 193
+snd_kill_the_infidels = 194
+snd_afirid_alala = 195
+snd_afirid_cries = 196
+snd_forward = 197
 
 

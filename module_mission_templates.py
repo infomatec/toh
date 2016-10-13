@@ -3771,7 +3771,7 @@ mission_templates = [
       common_battle_check_victory_condition,
       common_battle_victory_display,
 
-	(1, 4, ti_once,
+	(1, 10, ti_once,
 			[
 				(main_hero_fallen),
 				(assign, ":pteam_alive", 0),
@@ -3782,10 +3782,15 @@ mission_templates = [
 					(assign, ":pteam_alive", 1),
 				(try_end),
 				(eq, ":pteam_alive", 0),
-			],
-			[
 				(assign, "$pin_player_fallen", 1),
 				(display_message, "@Press TAB to end the battle."),
+			],
+			[
+                                (call_script, "script_simulate_retreat", 0, 0, 0),
+                                (assign, "$g_battle_result", -1),
+                                (set_mission_result, -1),
+                                (call_script, "script_count_mission_casualties_from_agents"),
+                                (finish_mission, 0),
 			]),
 
       common_battle_inventory,
@@ -3895,10 +3900,6 @@ mission_templates = [
               ], []), #calculating and applying effect of people on others courage scores
 
       (3, 0, 0, [
-          
-            (this_or_next|eq,"$g_battle_won",1),
-            (eq, "$pin_player_fallen", 1),
-            (store_mission_timer_a,":mission_time"),
           (try_for_agents, ":agent_no"),
             (agent_is_human, ":agent_no"),
             (agent_is_alive, ":agent_no"),          
