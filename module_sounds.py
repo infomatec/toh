@@ -222,7 +222,7 @@ sounds = [
 ("borovod_cry",sf_priority_8|sf_vol_10, ["borovod_cry1.mp3","borovod_cry2.mp3","borovod_cry3.mp3","borovod_cry4.mp3"]),
 ("borovod_hurrah",sf_priority_2|sf_vol_10, ["hurrah1.mp3","hurrah2.mp3","hurrah3.mp3"]),
 ("borovod_cheering",sf_priority_2|sf_vol_10, ["hurrah1.mp3","hurrah2.mp3","hurrah3.mp3","cheering_borovod_1.mp3"]),
-("imifir_cry",sf_priority_2|sf_vol_10, ["imifir_1.mp3","imifir_2.mp3","imifir_3.mp3","imifir_4.mp3","imifir_5.mp3","imifir_6.mp3","imifir_7.mp3"]),
+("imifir_cry",sf_priority_2|sf_vol_10, ["imifir_1.mp3","imifir_2.mp3","imifir_3.mp3","imifir_4.mp3","imifir_5.mp3","imifir_6.mp3","imifir_7.mp3","imifir_8.mp3"]),
 ("imifir_tercio",sf_priority_2|sf_vol_10, ["imifir_tercio.mp3"]),
 ("kill_the_infidels",sf_priority_2|sf_vol_10, ["kill_infidels_a.mp3","kill_infidels_b.mp3"]),
 ("afirid_alala",sf_priority_2|sf_vol_10, ["afirid_alala_a.mp3","afirid_alala_b.mp3"]),

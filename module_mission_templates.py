@@ -3787,10 +3787,10 @@ mission_templates = [
 			],
 			[
                                 (call_script, "script_simulate_retreat", 0, 0, 0),
-                                (assign, "$g_battle_result", -1),
-                                (set_mission_result, -1),
-                                (call_script, "script_count_mission_casualties_from_agents"),
-                                (finish_mission, 0),
++                                (assign, "$g_battle_result", -1),
++                                (set_mission_result, -1),
++                                (call_script, "script_count_mission_casualties_from_agents"),
++                                (finish_mission, 0),
 			]),
 
       common_battle_inventory,
