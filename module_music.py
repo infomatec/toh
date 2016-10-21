@@ -38,12 +38,9 @@ tracks = [
 ("toh_battle_pravar",   	"toh_battle_pravar.ogg",   mtf_module_track|mtf_sit_fight,mtf_sit_fight|mtf_sit_ambushed),
 ("toh_battle_empire",   	"toh_battle_empire.ogg",   mtf_module_track|mtf_sit_fight,mtf_sit_fight|mtf_sit_ambushed),
 
-("toh_battle_borovod_1",  	"toh_battle_borovod_1.ogg",    mtf_module_track|mtf_sit_fight, mtf_sit_fight|mtf_sit_ambushed),
-("toh_battle_borovod_2",  	"toh_battle_borovod_2.ogg",    mtf_module_track|mtf_sit_fight, mtf_sit_fight|mtf_sit_ambushed),
-("toh_battle_borovod_3",  	"toh_battle_borovod_3.ogg",    mtf_module_track|mtf_sit_fight, mtf_sit_fight|mtf_sit_ambushed),
+("toh_battle_borovod",  	"toh_battle_borovod.ogg",    mtf_module_track|mtf_sit_fight, mtf_sit_fight|mtf_sit_ambushed),
 
-("toh_battle_hadvog_1",   	"toh_battle_hadvog_1.ogg",   mtf_module_track|mtf_sit_fight, mtf_sit_fight|mtf_sit_ambushed),
-("toh_battle_hadvog_2",   	"toh_battle_hadvog_2.ogg",   mtf_module_track|mtf_sit_fight, mtf_sit_fight|mtf_sit_ambushed),
+("toh_battle_hadvog",   	"toh_battle_hadvog.ogg",   mtf_module_track|mtf_sit_fight, mtf_sit_fight|mtf_sit_ambushed),
 
 ("toh_battle_guhulay",   	"toh_battle_guhulay.ogg",  mtf_module_track|mtf_sit_fight,  mtf_sit_fight|mtf_sit_ambushed),
 ("toh_battle_imifir",   	"toh_battle_imifir.mp3",    mtf_module_track|mtf_sit_fight,mtf_sit_fight|mtf_sit_ambushed),
@@ -65,11 +62,8 @@ tracks = [
 ("fight_1", "fight_1.ogg", mtf_module_track|mtf_sit_fight,mtf_sit_fight|mtf_sit_ambushed),
 ("fight_2", "fight_2.ogg", mtf_module_track|mtf_sit_fight,mtf_sit_fight),
 ("fight_3", "fight_3.ogg", mtf_module_track|mtf_sit_ambushed,mtf_sit_fight|mtf_sit_ambushed),
-#("fight_4", "fight_4.ogg", mtf_module_track,mtf_sit_fight),
-#("fight_5", "fight_5.ogg", mtf_module_track|mtf_sit_ambushed,mtf_sit_fight|mtf_sit_ambushed),
-("fight_6", "fight_6.ogg", mtf_module_track,mtf_sit_fight),
-("fight_7", "fight_7.ogg", mtf_module_track|mtf_sit_ambushed,mtf_sit_fight|mtf_sit_ambushed),
-("fight_8", "fight_8.ogg", mtf_module_track|mtf_sit_ambushed,mtf_sit_fight|mtf_sit_ambushed),
+("fight_4", "fight_4.ogg", mtf_module_track,mtf_sit_fight),
+("fight_5", "fight_5.ogg", mtf_module_track|mtf_sit_ambushed,mtf_sit_fight|mtf_sit_ambushed),
 #("percussion_battery", "percussion_battery.ogg", mtf_module_track|mtf_sit_fight,mtf_sit_fight|mtf_sit_ambushed),
 ("fight_while_mounted_1", "fight_while_mounted_1.ogg", mtf_module_track|mtf_sit_fight,mtf_sit_fight|mtf_sit_ambushed),
 ("fight_while_mounted_2", "fight_while_mounted_2.ogg", mtf_module_track|mtf_sit_fight,mtf_sit_fight|mtf_sit_ambushed),
